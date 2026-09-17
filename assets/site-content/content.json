@@ -1,0 +1,1690 @@
+{
+  "schemaVersion": 2,
+  "lifeMedia": [
+    {
+      "id": "travel",
+      "title": {
+        "zh": "旅行",
+        "en": "Travel"
+      },
+      "videos": [],
+      "photos": []
+    },
+    {
+      "id": "fitness",
+      "title": {
+        "zh": "健身",
+        "en": "Fitness"
+      },
+      "videos": [
+        {
+          "id": "fitness-video-01",
+          "src": "assets/life-library/fitness-video-01.mp4",
+          "title": {
+            "zh": "第一次减脂",
+            "en": "First cut"
+          },
+          "poster": "assets/life-library/fitness-video-01.jpg",
+          "duration": 14.133333
+        },
+        {
+          "id": "fitness-video-02",
+          "src": "assets/life-library/fitness-video-02.mp4",
+          "title": {
+            "zh": "第二次减脂",
+            "en": "Second cut"
+          },
+          "poster": "assets/life-library/fitness-video-02.jpg",
+          "duration": 385.3
+        }
+      ],
+      "photos": []
+    },
+    {
+      "id": "gaming",
+      "title": {
+        "zh": "游戏",
+        "en": "Gaming"
+      },
+      "videos": [
+        {
+          "id": "gaming-video-01",
+          "src": "assets/life-library/gaming-video-01.mp4",
+          "title": {
+            "zh": "合集",
+            "en": "Gaming collection"
+          },
+          "poster": "assets/life-library/gaming-video-01.jpg",
+          "duration": 18.167
+        },
+        {
+          "id": "gaming-video-02",
+          "src": "assets/life-library/gaming-video-02.mp4",
+          "title": {
+            "zh": "瓦",
+            "en": "瓦"
+          },
+          "poster": "assets/life-library/gaming-video-02.jpg",
+          "duration": 61.646029
+        }
+      ],
+      "photos": []
+    },
+    {
+      "id": "study",
+      "title": {
+        "zh": "留学",
+        "en": "Study abroad"
+      },
+      "videos": [
+        {
+          "id": "study-video-01",
+          "src": "assets/life-library/study-video-01.mp4",
+          "title": {
+            "zh": "整个留学",
+            "en": "Study abroad film"
+          },
+          "poster": "assets/life-library/study-video-01.jpg",
+          "duration": 18.436009
+        },
+        {
+          "id": "study-video-02",
+          "src": "assets/life-library/study-video-02.mp4",
+          "title": {
+            "zh": "2023过年",
+            "en": "New Year 2023"
+          },
+          "poster": "assets/life-library/study-video-02.jpg",
+          "duration": 19.619002
+        },
+        {
+          "id": "study-video-03",
+          "src": "assets/life-library/study-video-03.mp4",
+          "title": {
+            "zh": "墨尔本做饭vlog",
+            "en": "Cooking in Melbourne"
+          },
+          "poster": "assets/life-library/study-video-03.jpg",
+          "duration": 94.066667
+        },
+        {
+          "id": "study-video-04",
+          "src": "assets/life-library/study-video-04.mp4",
+          "title": {
+            "zh": "换装转场",
+            "en": "Outfit transition"
+          },
+          "poster": "assets/life-library/study-video-04.jpg",
+          "duration": 8.633333
+        },
+        {
+          "id": "study-video-05",
+          "src": "assets/life-library/study-video-05.mp4",
+          "title": {
+            "zh": "本科毕业",
+            "en": "Undergraduate graduation"
+          },
+          "poster": "assets/life-library/study-video-05.jpg",
+          "duration": 14.333333
+        }
+      ],
+      "photos": [
+        {
+          "id": "study-photo-002",
+          "src": "assets/life-library/study-photo-002.jpg",
+          "title": {
+            "zh": "留学照片 02",
+            "en": "Study abroad photograph 02"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-003",
+          "src": "assets/life-library/study-photo-003.jpg",
+          "title": {
+            "zh": "留学照片 03",
+            "en": "Study abroad photograph 03"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-004",
+          "src": "assets/life-library/study-photo-004.jpg",
+          "title": {
+            "zh": "留学照片 04",
+            "en": "Study abroad photograph 04"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-005",
+          "src": "assets/life-library/study-photo-005.jpg",
+          "title": {
+            "zh": "留学照片 05",
+            "en": "Study abroad photograph 05"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-006",
+          "src": "assets/life-library/study-photo-006.jpg",
+          "title": {
+            "zh": "留学照片 06",
+            "en": "Study abroad photograph 06"
+          },
+          "width": 1080,
+          "height": 2337
+        },
+        {
+          "id": "study-photo-007",
+          "src": "assets/life-library/study-photo-007.jpg",
+          "title": {
+            "zh": "留学照片 07",
+            "en": "Study abroad photograph 07"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-008",
+          "src": "assets/life-library/study-photo-008.jpg",
+          "title": {
+            "zh": "留学照片 08",
+            "en": "Study abroad photograph 08"
+          },
+          "width": 1076,
+          "height": 1436
+        },
+        {
+          "id": "study-photo-009",
+          "src": "assets/life-library/study-photo-009.jpg",
+          "title": {
+            "zh": "留学照片 09",
+            "en": "Study abroad photograph 09"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-010",
+          "src": "assets/life-library/study-photo-010.jpg",
+          "title": {
+            "zh": "留学照片 10",
+            "en": "Study abroad photograph 10"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-011",
+          "src": "assets/life-library/study-photo-011.jpg",
+          "title": {
+            "zh": "留学照片 11",
+            "en": "Study abroad photograph 11"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-012",
+          "src": "assets/life-library/study-photo-012.jpg",
+          "title": {
+            "zh": "留学照片 12",
+            "en": "Study abroad photograph 12"
+          },
+          "width": 889,
+          "height": 1252
+        },
+        {
+          "id": "study-photo-013",
+          "src": "assets/life-library/study-photo-013.jpg",
+          "title": {
+            "zh": "留学照片 13",
+            "en": "Study abroad photograph 13"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-014",
+          "src": "assets/life-library/study-photo-014.jpg",
+          "title": {
+            "zh": "留学照片 14",
+            "en": "Study abroad photograph 14"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-015",
+          "src": "assets/life-library/study-photo-015.jpg",
+          "title": {
+            "zh": "留学照片 15",
+            "en": "Study abroad photograph 15"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-016",
+          "src": "assets/life-library/study-photo-016.jpg",
+          "title": {
+            "zh": "留学照片 16",
+            "en": "Study abroad photograph 16"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-017",
+          "src": "assets/life-library/study-photo-017.jpg",
+          "title": {
+            "zh": "留学照片 17",
+            "en": "Study abroad photograph 17"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-018",
+          "src": "assets/life-library/study-photo-018.jpg",
+          "title": {
+            "zh": "留学照片 18",
+            "en": "Study abroad photograph 18"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-019",
+          "src": "assets/life-library/study-photo-019.jpg",
+          "title": {
+            "zh": "留学照片 19",
+            "en": "Study abroad photograph 19"
+          },
+          "width": 819,
+          "height": 1024
+        },
+        {
+          "id": "study-photo-020",
+          "src": "assets/life-library/study-photo-020.jpg",
+          "title": {
+            "zh": "留学照片 20",
+            "en": "Study abroad photograph 20"
+          },
+          "width": 819,
+          "height": 1024
+        },
+        {
+          "id": "study-photo-021",
+          "src": "assets/life-library/study-photo-021.jpg",
+          "title": {
+            "zh": "留学照片 21",
+            "en": "Study abroad photograph 21"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-022",
+          "src": "assets/life-library/study-photo-022.jpg",
+          "title": {
+            "zh": "留学照片 22",
+            "en": "Study abroad photograph 22"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-023",
+          "src": "assets/life-library/study-photo-023.jpg",
+          "title": {
+            "zh": "留学照片 23",
+            "en": "Study abroad photograph 23"
+          },
+          "width": 1440,
+          "height": 810
+        },
+        {
+          "id": "study-photo-024",
+          "src": "assets/life-library/study-photo-024.jpg",
+          "title": {
+            "zh": "留学照片 24",
+            "en": "Study abroad photograph 24"
+          },
+          "width": 810,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-025",
+          "src": "assets/life-library/study-photo-025.jpg",
+          "title": {
+            "zh": "留学照片 25",
+            "en": "Study abroad photograph 25"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-026",
+          "src": "assets/life-library/study-photo-026.jpg",
+          "title": {
+            "zh": "留学照片 26",
+            "en": "Study abroad photograph 26"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-027",
+          "src": "assets/life-library/study-photo-027.jpg",
+          "title": {
+            "zh": "留学照片 27",
+            "en": "Study abroad photograph 27"
+          },
+          "width": 1284,
+          "height": 714
+        },
+        {
+          "id": "study-photo-028",
+          "src": "assets/life-library/study-photo-028.jpg",
+          "title": {
+            "zh": "留学照片 28",
+            "en": "Study abroad photograph 28"
+          },
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-029",
+          "src": "assets/life-library/study-photo-029.jpg",
+          "title": {
+            "zh": "留学照片 29",
+            "en": "Study abroad photograph 29"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-030",
+          "src": "assets/life-library/study-photo-030.jpg",
+          "title": {
+            "zh": "留学照片 30",
+            "en": "Study abroad photograph 30"
+          },
+          "width": 1920,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-031",
+          "src": "assets/life-library/study-photo-031.jpg",
+          "title": {
+            "zh": "留学照片 31",
+            "en": "Study abroad photograph 31"
+          },
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "id": "study-photo-032",
+          "src": "assets/life-library/study-photo-032.jpg",
+          "title": {
+            "zh": "留学照片 32",
+            "en": "Study abroad photograph 32"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-033",
+          "src": "assets/life-library/study-photo-033.jpg",
+          "title": {
+            "zh": "留学照片 33",
+            "en": "Study abroad photograph 33"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-034",
+          "src": "assets/life-library/study-photo-034.jpg",
+          "title": {
+            "zh": "留学照片 34",
+            "en": "Study abroad photograph 34"
+          },
+          "width": 1080,
+          "height": 1920
+        },
+        {
+          "id": "study-photo-035",
+          "src": "assets/life-library/study-photo-035.jpg",
+          "title": {
+            "zh": "留学照片 35",
+            "en": "Study abroad photograph 35"
+          },
+          "width": 1080,
+          "height": 2648
+        },
+        {
+          "id": "study-photo-036",
+          "src": "assets/life-library/study-photo-036.jpg",
+          "title": {
+            "zh": "留学照片 36",
+            "en": "Study abroad photograph 36"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-037",
+          "src": "assets/life-library/study-photo-037.jpg",
+          "title": {
+            "zh": "留学照片 37",
+            "en": "Study abroad photograph 37"
+          },
+          "width": 1440,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-038",
+          "src": "assets/life-library/study-photo-038.jpg",
+          "title": {
+            "zh": "留学照片 38",
+            "en": "Study abroad photograph 38"
+          },
+          "width": 1920,
+          "height": 2560
+        },
+        {
+          "id": "study-photo-039",
+          "src": "assets/life-library/study-photo-039.jpg",
+          "title": {
+            "zh": "留学照片 39",
+            "en": "Study abroad photograph 39"
+          },
+          "width": 1920,
+          "height": 2560
+        },
+        {
+          "id": "study-photo-040",
+          "src": "assets/life-library/study-photo-040.jpg",
+          "title": {
+            "zh": "留学照片 40",
+            "en": "Study abroad photograph 40"
+          },
+          "width": 1920,
+          "height": 2560
+        },
+        {
+          "id": "study-photo-041",
+          "src": "assets/life-library/study-photo-041.jpg",
+          "title": {
+            "zh": "留学照片 41",
+            "en": "Study abroad photograph 41"
+          },
+          "width": 1080,
+          "height": 1442
+        },
+        {
+          "id": "study-photo-042",
+          "src": "assets/life-library/study-photo-042.jpg",
+          "title": {
+            "zh": "留学照片 42",
+            "en": "Study abroad photograph 42"
+          },
+          "width": 1080,
+          "height": 1442
+        },
+        {
+          "id": "study-photo-043",
+          "src": "assets/life-library/study-photo-043.jpg",
+          "title": {
+            "zh": "留学照片 43",
+            "en": "Study abroad photograph 43"
+          },
+          "width": 1081,
+          "height": 1080
+        },
+        {
+          "id": "study-photo-044",
+          "src": "assets/life-library/study-photo-044.jpg",
+          "title": {
+            "zh": "留学照片 44",
+            "en": "Study abroad photograph 44"
+          },
+          "width": 1080,
+          "height": 1620
+        },
+        {
+          "id": "study-photo-045",
+          "src": "assets/life-library/study-photo-045.jpg",
+          "title": {
+            "zh": "留学照片 45",
+            "en": "Study abroad photograph 45"
+          },
+          "width": 1080,
+          "height": 1701
+        },
+        {
+          "id": "study-photo-046",
+          "src": "assets/life-library/study-photo-046.jpg",
+          "title": {
+            "zh": "留学照片 46",
+            "en": "Study abroad photograph 46"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-047",
+          "src": "assets/life-library/study-photo-047.jpg",
+          "title": {
+            "zh": "留学照片 47",
+            "en": "Study abroad photograph 47"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-048",
+          "src": "assets/life-library/study-photo-048.jpg",
+          "title": {
+            "zh": "留学照片 48",
+            "en": "Study abroad photograph 48"
+          },
+          "width": 1080,
+          "height": 1440
+        },
+        {
+          "id": "study-photo-049",
+          "src": "assets/life-library/study-photo-049.jpg",
+          "title": {
+            "zh": "留学照片 49",
+            "en": "Study abroad photograph 49"
+          },
+          "width": 1080,
+          "height": 1440
+        }
+      ]
+    }
+  ],
+  "experiences": [
+    {
+      "id": "gf",
+      "zh": {
+        "date": "2025.12 — 2026.02",
+        "place": "广州",
+        "company": "广发证券",
+        "role": "客户经理助理（营业部）",
+        "description": "参与客户接待与业务咨询，协助产品介绍；整理客户行为数据，并参与客户及银行等机构的拜访与合作拓展；理解不同客户的关注点，让沟通与服务更有针对性"
+      },
+      "en": {
+        "date": "2025.12 — 2026.02",
+        "place": "Guangzhou",
+        "company": "GF Securities",
+        "role": "Client Manager Assistant · Branch",
+        "description": "Supported client reception, product introductions and business enquiries; organised client behaviour data and joined visits to clients and banking partners"
+      }
+    },
+    {
+      "id": "honghe",
+      "zh": {
+        "date": "2024.11 — 2025.01",
+        "place": "郑州",
+        "company": "红禾网络科技",
+        "role": "独立站运营",
+        "description": "参与选品、Shopify 建站与详情页优化，开展广告测试与预算管理；结合流量、转化和成本评估运营表现；建立商家视角，关注整体收益，而非单一指标"
+      },
+      "en": {
+        "date": "2024.11 — 2025.01",
+        "place": "Zhengzhou",
+        "company": "Honghe Network Technology",
+        "role": "E-commerce Website Operations",
+        "description": "Worked on a Shopify store and page optimisation, ran audience and creative A/B tests, and managed Facebook advertising budgets and campaign pacing"
+      }
+    },
+    {
+      "id": "illuminera",
+      "zh": {
+        "date": "2023.05 — 2023.07",
+        "place": "上海",
+        "company": "意略明 Illuminera",
+        "role": "电商数据分析助理",
+        "description": "参与行业研究、竞品及电商数据分析，协助识别客户业务问题并提出营销建议；参加上海美博会介绍公司业务、寻找合作机会，并整理客户会议记录；从客户需求出发，用数据发现问题、支持策略"
+      },
+      "en": {
+        "date": "2023.05 — 2023.07",
+        "place": "Shanghai",
+        "company": "Illuminera",
+        "role": "E-commerce Data Analysis Assistant",
+        "description": "Cleaned and analysed platform data, developed customer profiles and competitor analysis, and supported brand and marketing work with Excel, presentations and desk research"
+      }
+    }
+  ],
+  "copy": {
+    "intro.text01": {
+      "zh": "开场影片",
+      "en": "Opening film"
+    },
+    "intro.text02": {
+      "zh": "未来，\n从这里开始",
+      "en": "The future,\nstarts here"
+    },
+    "intro.text03": {
+      "zh": "高瑞徽 / JasonG",
+      "en": "JasonG / 高瑞徽"
+    },
+    "intro.text04": {
+      "zh": "向下探索",
+      "en": "Explore below"
+    },
+    "intro.text05": {
+      "zh": "进入首页",
+      "en": "Go to home"
+    },
+    "home.text01": {
+      "zh": "认识 JasonG",
+      "en": "Meet JasonG"
+    },
+    "home.text02": {
+      "zh": "JasonG，黑色未来战衣与电蓝色胸徽",
+      "en": "JasonG in a black futuristic suit with an electric blue emblem"
+    },
+    "home.text03": {
+      "zh": "探索未来 AI 世界",
+      "en": "Exploring the future of AI"
+    },
+    "home.text04": {
+      "zh": "好奇心 / 执行力 / 勇气",
+      "en": "Curiosity / Execution / Courage"
+    },
+    "home.text05": {
+      "zh": "进入目录",
+      "en": "Explore my world"
+    },
+    "home.text06": {
+      "zh": "认识我",
+      "en": "Meet me"
+    },
+    "directory.text01": {
+      "zh": "下一站，\n想去哪里？",
+      "en": "Where to\nnext?"
+    },
+    "directory.text02": {
+      "zh": "好奇心 / 执行力 / 勇气",
+      "en": "Curiosity / Execution / Courage"
+    },
+    "directory.text03": {
+      "zh": "保持联系",
+      "en": "Get in touch"
+    },
+    "home.name": {
+      "zh": "JasonG",
+      "en": "JasonG"
+    },
+    "home.chineseName": {
+      "zh": "高瑞徽",
+      "en": "高瑞徽"
+    },
+    "home.signature": {
+      "zh": "JASONG — A WORLD IN THE MAKING",
+      "en": "JASONG — A WORLD IN THE MAKING"
+    },
+    "directory.backgroundWord": {
+      "zh": "EXPLORE",
+      "en": "EXPLORE"
+    },
+    "directory.about.title": {
+      "zh": "认识我",
+      "en": "About JasonG"
+    },
+    "directory.about.caption": {
+      "zh": "打开个人档案",
+      "en": "Open my profile"
+    },
+    "directory.about.secondary": {
+      "zh": "About JasonG",
+      "en": "JasonG"
+    },
+    "directory.experience.title": {
+      "zh": "实习经历",
+      "en": "Experience"
+    },
+    "directory.experience.caption": {
+      "zh": "让经历说话",
+      "en": "Learning by doing"
+    },
+    "directory.experience.secondary": {
+      "zh": "Experience",
+      "en": "JasonG"
+    },
+    "directory.projects.title": {
+      "zh": "项目经历",
+      "en": "Projects"
+    },
+    "directory.projects.caption": {
+      "zh": "想法成为实践",
+      "en": "Ideas into practice"
+    },
+    "directory.projects.secondary": {
+      "zh": "Projects",
+      "en": "JasonG"
+    },
+    "directory.life.title": {
+      "zh": "人生体验",
+      "en": "Life"
+    },
+    "directory.life.caption": {
+      "zh": "带上好奇心",
+      "en": "Stay curious"
+    },
+    "directory.life.secondary": {
+      "zh": "Life",
+      "en": "JasonG"
+    },
+    "navigation.text01": {
+      "zh": "主导航",
+      "en": "Main navigation"
+    },
+    "navigation.text02": {
+      "zh": "调整音量",
+      "en": "Adjust volume"
+    },
+    "navigation.text03": {
+      "zh": "调整音量",
+      "en": "Adjust volume"
+    },
+    "navigation.text04": {
+      "zh": "背景音乐",
+      "en": "Soundtrack"
+    },
+    "navigation.text05": {
+      "zh": "背景音乐音量",
+      "en": "Background music volume"
+    },
+    "navigation.text06": {
+      "zh": "点击声波按钮开始播放",
+      "en": "Press the waveform to start playback"
+    },
+    "navigation.text07": {
+      "zh": "音乐与动效独立控制",
+      "en": "Sound and motion are independent"
+    },
+    "navigation.text09": {
+      "zh": "Switch to English",
+      "en": "切换到中文"
+    },
+    "navigation.text10": {
+      "zh": "EN",
+      "en": "中"
+    },
+    "navigation.text11": {
+      "zh": "打开目录",
+      "en": "Open menu"
+    },
+    "navigation.text12": {
+      "zh": "关闭目录",
+      "en": "Close menu"
+    },
+    "navigation.text13": {
+      "zh": "移动端导航",
+      "en": "Mobile navigation"
+    },
+    "navigation.text14": {
+      "zh": "好奇心 / 执行力 / 勇气",
+      "en": "Curiosity / Execution / Courage"
+    },
+    "navigation.home": {
+      "zh": "首页",
+      "en": "Home"
+    },
+    "navigation.directory": {
+      "zh": "目录",
+      "en": "Explore"
+    },
+    "navigation.experience": {
+      "zh": "经历",
+      "en": "Experience"
+    },
+    "navigation.projects": {
+      "zh": "项目",
+      "en": "Projects"
+    },
+    "navigation.life": {
+      "zh": "生活",
+      "en": "Life"
+    },
+    "navigation.contact": {
+      "zh": "联系",
+      "en": "Contact"
+    },
+    "contact.text01": {
+      "zh": "JasonG 的机甲分身",
+      "en": "JasonG’s armoured alter ego"
+    },
+    "contact.text02": {
+      "zh": "一起，\n探索未来",
+      "en": "Let’s explore\nwhat’s next"
+    },
+    "contact.text03": {
+      "zh": "复制邮箱",
+      "en": "Copy email"
+    },
+    "contact.text04": {
+      "zh": "复制手机号",
+      "en": "Copy phone"
+    },
+    "contact.text05": {
+      "zh": "已复制",
+      "en": "Copied"
+    },
+    "contact.text06": {
+      "zh": "请长按或选择上方文字复制",
+      "en": "Select the text above to copy"
+    },
+    "contact.text07": {
+      "zh": "关于 AI、工作，或者生活，都可以聊聊",
+      "en": "Let’s talk about AI, work, or life"
+    },
+    "contact.text08": {
+      "zh": "好奇心 / 执行力 / 勇气",
+      "en": "Curiosity / Execution / Courage"
+    },
+    "contact.text09": {
+      "zh": "返回首页",
+      "en": "Back to home"
+    },
+    "contact.text10": {
+      "zh": "跳过开场",
+      "en": "Skip opening film"
+    },
+    "contact.text11": {
+      "zh": "认识高瑞徽",
+      "en": "Meet JasonG"
+    },
+    "contact.text12": {
+      "zh": "关闭个人资料",
+      "en": "Close profile"
+    },
+    "contact.text13": {
+      "zh": "正在打开个人档案…",
+      "en": "Opening my profile…"
+    },
+    "contact.email": {
+      "zh": "g18530106867@163.com",
+      "en": "g18530106867@163.com"
+    },
+    "contact.phone": {
+      "zh": "+8618530106867",
+      "en": "+8618530106867"
+    },
+    "contact.phoneDisplay": {
+      "zh": "+86 185 3010 6867",
+      "en": "+86 185 3010 6867"
+    },
+    "contact.owner": {
+      "zh": "高瑞徽 / JasonG",
+      "en": "高瑞徽 / JasonG"
+    },
+    "profile.title": {
+      "zh": "认识高瑞徽",
+      "en": "Meet JasonG"
+    },
+    "profile.close": {
+      "zh": "关闭个人信息",
+      "en": "Close profile"
+    },
+    "profile.intro": {
+      "zh": "从计算机到管理学，保持好奇，把想法带进真实的问题",
+      "en": "From computing to management; stay curious, and bring ideas to real problems"
+    },
+    "profile.bio": {
+      "zh": "我正在学习用 AI 辅助开发，探索 AI 企业服务、B2B 销售与解决方案咨询；喜欢理解需求、尝试新工具，也重视协作和人的判断",
+      "en": "I am learning to build with AI, exploring AI business services, B2B sales and solutions consulting; I enjoy understanding needs, trying new tools and working with people"
+    },
+    "profile.values": {
+      "zh": "好奇心 · 执行力 · 勇气",
+      "en": "Curiosity · Action · Courage"
+    },
+    "profile.education": {
+      "zh": "教育经历",
+      "en": "Education"
+    },
+    "profile.melbourne": {
+      "zh": "墨尔本大学",
+      "en": "University of Melbourne"
+    },
+    "profile.masters": {
+      "zh": "管理学硕士 · 在读",
+      "en": "Master of Management · In progress"
+    },
+    "profile.mastersDate": {
+      "zh": "2025.03 — 2026.11（预计）",
+      "en": "Mar 2025 — Nov 2026 (expected)"
+    },
+    "profile.queens": {
+      "zh": "女王大学 · 加拿大",
+      "en": "Queen’s University · Canada"
+    },
+    "profile.computing": {
+      "zh": "计算机荣誉学士",
+      "en": "Computing honours degree"
+    },
+    "profile.computingDate": {
+      "zh": "2021.01 — 2024.06",
+      "en": "Jan 2021 — Jun 2024"
+    },
+    "profile.instruction": {
+      "zh": "抓住卡片，轻轻拖动，然后松手",
+      "en": "Grab the card, give it a gentle pull, then release"
+    },
+    "profile.reset": {
+      "zh": "重置卡片",
+      "en": "Reset card"
+    },
+    "profile.drag": {
+      "zh": "拖动身份卡；按 Enter 或空格重置",
+      "en": "Drag the identity card; press Enter or Space to reset"
+    },
+    "profile.static": {
+      "zh": "静态身份卡",
+      "en": "Static identity card"
+    },
+    "profile.loading": {
+      "zh": "正在准备可拖动卡片",
+      "en": "Preparing the draggable card"
+    },
+    "profile.fallback": {
+      "zh": "当前设备显示静态卡片，个人信息仍可完整阅读",
+      "en": "This device is showing the static card; all profile information remains available"
+    },
+    "profile.portrait": {
+      "zh": "高瑞徽选定的个人角色肖像",
+      "en": "Personal character portrait selected by Gao Ruihui"
+    },
+    "profile.continue": {
+      "zh": "继续探索",
+      "en": "Keep exploring"
+    },
+    "profile.field": {
+      "zh": "计算机背景 × 管理学在读",
+      "en": "Computing background × Management student"
+    },
+    "identity.text01": {
+      "zh": "悬挂身份卡",
+      "en": "Hanging identity card"
+    },
+    "identity.text02": {
+      "zh": "拖动身份卡，点击展开",
+      "en": "Drag the identity card, or click to open"
+    },
+    "identity.text03": {
+      "zh": "拉下，认识我",
+      "en": "Pull to meet me"
+    },
+    "identity.text04": {
+      "zh": "认识我",
+      "en": "Meet me"
+    },
+    "identity.text05": {
+      "zh": "收回",
+      "en": "Retract"
+    },
+    "pet.text01": {
+      "zh": "圆宝，绿眼睛橘猫，穿黑色蓝边外套",
+      "en": "Yuanbao, a green-eyed ginger cat in a black jacket with blue trim"
+    },
+    "pet.text02": {
+      "zh": "圆宝",
+      "en": "Yuanbao"
+    },
+    "pet.text03": {
+      "zh": "网站管家",
+      "en": "Your companion"
+    },
+    "pet.text04": {
+      "zh": "眯一会儿，等你叫醒",
+      "en": "Napping until you need me"
+    },
+    "pet.text05": {
+      "zh": "黏你一点，陪你多逛一点",
+      "en": "A little closer, a little more curious"
+    },
+    "pet.text06": {
+      "zh": "收起圆宝",
+      "en": "Close Yuanbao"
+    },
+    "pet.text07": {
+      "zh": "现在一起逛",
+      "en": "Exploring"
+    },
+    "pet.text08": {
+      "zh": "介绍此页",
+      "en": "About this page"
+    },
+    "pet.text09": {
+      "zh": "与圆宝的对话",
+      "en": "Conversation with Yuanbao"
+    },
+    "pet.text10": {
+      "zh": "嗨，我是圆宝，想陪你多待一会儿",
+      "en": "Hi, I’m Yuanbao — stay a little while with me"
+    },
+    "pet.text11": {
+      "zh": "可以问我 Jason 的经历、作品和生活，也可以让我带路",
+      "en": "Ask about Jason’s experience, projects or life — or let me show you around"
+    },
+    "pet.text12": {
+      "zh": "你：",
+      "en": "You: "
+    },
+    "pet.text13": {
+      "zh": "圆宝：",
+      "en": "Yuanbao: "
+    },
+    "pet.text14": {
+      "zh": "圆宝先休息一下",
+      "en": "Taking a little nap"
+    },
+    "pet.text15": {
+      "zh": "叫醒我，就继续陪你",
+      "en": "Wake me and we’ll carry on together"
+    },
+    "pet.text16": {
+      "zh": "叫醒圆宝",
+      "en": "Wake Yuanbao"
+    },
+    "pet.text17": {
+      "zh": "圆宝互动",
+      "en": "Companion actions"
+    },
+    "pet.text19": {
+      "zh": "带我逛逛",
+      "en": "Explore"
+    },
+    "pet.text20": {
+      "zh": "摸摸",
+      "en": "Pet"
+    },
+    "pet.text21": {
+      "zh": "唤醒",
+      "en": "Wake"
+    },
+    "pet.text22": {
+      "zh": "休息",
+      "en": "Rest"
+    },
+    "pet.text23": {
+      "zh": "清空本次对话",
+      "en": "Clear this conversation"
+    },
+    "pet.text24": {
+      "zh": "清空本次对话",
+      "en": "Clear this conversation"
+    },
+    "pet.text25": {
+      "zh": "问圆宝",
+      "en": "Ask Yuanbao"
+    },
+    "pet.text26": {
+      "zh": "先叫醒圆宝吧",
+      "en": "Wake Yuanbao to chat"
+    },
+    "pet.text27": {
+      "zh": "问问经历，或者说“带我去项目”",
+      "en": "Ask about Jason, or “take me to projects”"
+    },
+    "pet.text28": {
+      "zh": "发送给圆宝",
+      "en": "Send to Yuanbao"
+    },
+    "pet.text29": {
+      "zh": "站内资料问答 · 对话仅保留在本次浏览中",
+      "en": "Site-based answers · Chat stays in this session"
+    },
+    "identity.brand": {
+      "zh": "JG",
+      "en": "JG"
+    },
+    "identity.kind": {
+      "zh": "PERSONAL ID",
+      "en": "PERSONAL ID"
+    },
+    "identity.chinese": {
+      "zh": "高瑞徽",
+      "en": "高瑞徽"
+    },
+    "identity.name": {
+      "zh": "JasonG",
+      "en": "JasonG"
+    },
+    "identity.id": {
+      "zh": "ID / JASONG",
+      "en": "ID / JASONG"
+    },
+    "identity.values": {
+      "zh": "好奇心 · 执行力 · 勇气",
+      "en": "Curiosity · Action · Courage"
+    },
+    "identity.motto": {
+      "zh": "探索未来 AI 世界",
+      "en": "Exploring the future with AI"
+    },
+    "identity.backLabel": {
+      "zh": "PERSONAL PORTFOLIO",
+      "en": "PERSONAL PORTFOLIO"
+    },
+    "identity.strap": {
+      "zh": "JASONG  /  EXPLORING",
+      "en": "JASONG  /  EXPLORING"
+    },
+    "experience.heading": {
+      "zh": "实习经历",
+      "en": "Experience"
+    },
+    "experience.subtitle": {
+      "zh": "把好奇，变成行动",
+      "en": "Turning curiosity into action"
+    },
+    "experience.tools": {
+      "zh": "实践中使用的工具",
+      "en": "Tools used in practice"
+    },
+    "experience.displayWord": {
+      "zh": "EXPERIENCE",
+      "en": "EXPERIENCE"
+    },
+    "experience.next": {
+      "zh": "看看我的项目",
+      "en": "Explore my projects"
+    },
+    "experience.empty": {
+      "zh": "暂时没有公开的实习经历",
+      "en": "No experience entries are currently published"
+    },
+    "experience.tool1": {
+      "zh": "Shopify",
+      "en": "Shopify"
+    },
+    "experience.tool2": {
+      "zh": "Facebook Ads",
+      "en": "Facebook Ads"
+    },
+    "experience.tool3": {
+      "zh": "Excel",
+      "en": "Excel"
+    },
+    "experience.tool4": {
+      "zh": "PowerPoint",
+      "en": "PowerPoint"
+    },
+    "projects.heading": {
+      "zh": "项目经历",
+      "en": "Projects"
+    },
+    "projects.empty": {
+      "zh": "暂时没有公开的项目",
+      "en": "No projects are currently published"
+    },
+    "projects.mediaEmpty": {
+      "zh": "这个项目还没有展示图片或视频",
+      "en": "No images or videos have been added to this project"
+    },
+    "projects.detailsEmpty": {
+      "zh": "暂时没有补充内容",
+      "en": "No additional content is available yet"
+    },
+    "projects.next": {
+      "zh": "工作之外的我",
+      "en": "Life beyond work"
+    },
+    "projects.select": {
+      "zh": "选择项目",
+      "en": "Select a project"
+    },
+    "projects.outputs": {
+      "zh": "交付成果",
+      "en": "Deliverables"
+    },
+    "projects.details": {
+      "zh": "项目详情",
+      "en": "Read the case study"
+    },
+    "projects.openPdf": {
+      "zh": "查看 PDF",
+      "en": "Open PDF"
+    },
+    "projects.preview": {
+      "zh": "成果预览",
+      "en": "deliverable previews"
+    },
+    "projects.openDetails": {
+      "zh": "打开详情",
+      "en": "open details"
+    },
+    "projects.selectPreview": {
+      "zh": "选择预览",
+      "en": "select preview"
+    },
+    "projects.previous": {
+      "zh": "上一张预览",
+      "en": "Previous preview"
+    },
+    "projects.nextPreview": {
+      "zh": "下一张预览",
+      "en": "Next preview"
+    },
+    "projects.resumePreview": {
+      "zh": "继续自动预览",
+      "en": "Resume automatic previews"
+    },
+    "projects.pausePreview": {
+      "zh": "暂停自动预览",
+      "en": "Pause automatic previews"
+    },
+    "projects.closeDetails": {
+      "zh": "关闭项目详情",
+      "en": "Close project details"
+    },
+    "projects.sections": {
+      "zh": "项目内容",
+      "en": "Case study sections"
+    },
+    "projects.page": {
+      "zh": "第 {page} 页",
+      "en": "Page {page}"
+    },
+    "common.resume": {
+      "zh": "继续",
+      "en": "Resume"
+    },
+    "common.pause": {
+      "zh": "暂停",
+      "en": "Pause"
+    },
+    "life.heading": {
+      "zh": "人生体验",
+      "en": "Life, in moments"
+    },
+    "life.subtitle": {
+      "zh": "工作之外，依然热爱生活",
+      "en": "There is more to life than work"
+    },
+    "life.play": {
+      "zh": "播放",
+      "en": "Play"
+    },
+    "life.videoError": {
+      "zh": "这段视频暂时无法播放",
+      "en": "This video could not be played"
+    },
+    "life.retryVideo": {
+      "zh": "重新播放",
+      "en": "Try again"
+    },
+    "life.openVideo": {
+      "zh": "打开视频文件",
+      "en": "Open video file"
+    },
+    "life.video": {
+      "zh": "视频",
+      "en": "Video"
+    },
+    "life.films": {
+      "zh": "影像",
+      "en": "Films"
+    },
+    "life.previousVideo": {
+      "zh": "上一段视频",
+      "en": "Previous video"
+    },
+    "life.nextVideo": {
+      "zh": "下一段视频",
+      "en": "Next video"
+    },
+    "life.videoPosition": {
+      "zh": "视频浏览位置",
+      "en": "Video browsing position"
+    },
+    "life.loadingPhoto": {
+      "zh": "正在打开照片",
+      "en": "Opening photograph"
+    },
+    "life.photoError": {
+      "zh": "暂时无法加载照片，可尝试打开原图",
+      "en": "This photograph could not be loaded — try opening the original"
+    },
+    "life.album": {
+      "zh": "相册",
+      "en": "Photographs"
+    },
+    "life.moments": {
+      "zh": "张真实生活记录",
+      "en": "moments from my life"
+    },
+    "life.closeAlbum": {
+      "zh": "关闭相册",
+      "en": "Close photo album"
+    },
+    "life.backToWall": {
+      "zh": "返回照片墙",
+      "en": "Back to photo wall"
+    },
+    "life.choosePhoto": {
+      "zh": "选择一张照片，走进这一刻",
+      "en": "Choose a photograph to step inside"
+    },
+    "life.dragHint": {
+      "zh": "拖动探索 · 点击照片展开",
+      "en": "Drag to explore · Click to open"
+    },
+    "life.dome": {
+      "zh": "球面视图",
+      "en": "Dome view"
+    },
+    "life.grid": {
+      "zh": "平面视图",
+      "en": "Grid view"
+    },
+    "life.allPhotos": {
+      "zh": "全部照片",
+      "en": "All photographs"
+    },
+    "life.previousPhoto": {
+      "zh": "上一张照片",
+      "en": "Previous photograph"
+    },
+    "life.nextPhoto": {
+      "zh": "下一张照片",
+      "en": "Next photograph"
+    },
+    "life.photo": {
+      "zh": "照片",
+      "en": "Photo"
+    },
+    "life.jumpPhoto": {
+      "zh": "跳转到照片",
+      "en": "Jump to photograph"
+    },
+    "life.openOriginal": {
+      "zh": "打开原图",
+      "en": "Open original"
+    },
+    "life.openSelected": {
+      "zh": "查看所选照片",
+      "en": "Open selected"
+    },
+    "life.categories": {
+      "zh": "生活分类",
+      "en": "Life categories"
+    },
+    "life.photoCount": {
+      "zh": "张照片",
+      "en": "photographs"
+    },
+    "life.albumHeading": {
+      "zh": "出发，去更大的世界",
+      "en": "A wider world awaits"
+    },
+    "life.exploreAlbum": {
+      "zh": "查看完整相册",
+      "en": "Explore the album"
+    },
+    "life.emptyHeading": {
+      "zh": "这一页，慢慢记录",
+      "en": "More moments to come"
+    },
+    "life.emptyBody": {
+      "zh": "这里还没有添加照片或视频",
+      "en": "No photographs or videos have been added here yet"
+    },
+    "life.exploreOther": {
+      "zh": "看看其他生活片段",
+      "en": "Explore more moments"
+    },
+    "life.footline": {
+      "zh": "每一段体验，都是我",
+      "en": "Each experience, a part of me"
+    },
+    "life.next": {
+      "zh": "保持联系",
+      "en": "Keep in touch"
+    }
+  },
+  "textBlocks": [],
+  "projects": [
+    {
+      "id": "project-media-1",
+      "kind": "case-study",
+      "title": {
+        "zh": "Woolworths Consumer Trust & Promotion Transparency Project",
+        "en": "Woolworths Consumer Trust & Promotion Transparency Project"
+      },
+      "subtitle": {
+        "zh": "课程团队项目｜商业分析｜消费者洞察",
+        "en": "Course team project | Business analysis | Consumer insights"
+      },
+      "summary": {
+        "zh": "围绕促销透明度与消费者信任，以消费者旅程、信任方程等工具梳理问题，形成团队分析海报与咨询提案",
+        "en": "Exploring promotional transparency and consumer trust through customer journeys and the Trust Equation, presented in a team poster and consulting proposal"
+      },
+      "displayTitle": {
+        "zh": "Woolworths",
+        "en": "Woolworths"
+      },
+      "subject": {
+        "zh": "Consumer Trust &\nPromotion Transparency",
+        "en": "Consumer Trust &\nPromotion Transparency"
+      },
+      "kindLabel": {
+        "zh": "团队课程项目",
+        "en": "Course team project"
+      },
+      "participationLabel": {
+        "zh": "参与整个项目流程",
+        "en": "Participated throughout the project"
+      },
+      "sourceNote": {
+        "zh": "项目范围为课程研究与咨询提案，未涵盖财务预测、司法判断或价格调整实施",
+        "en": "The project scope was course research and a consulting proposal; it excluded financial forecasting, legal judgments and implementation of price changes"
+      },
+      "tags": [
+        {
+          "zh": "消费者信任",
+          "en": "Consumer trust"
+        },
+        {
+          "zh": "促销透明度",
+          "en": "Promotion transparency"
+        },
+        {
+          "zh": "零售策略",
+          "en": "Retail strategy"
+        }
+      ],
+      "slides": [
+        {
+          "id": "poster",
+          "src": "assets/projects-woolworths-v27/poster.webp",
+          "label": {
+            "zh": "分析海报",
+            "en": "Analysis poster"
+          },
+          "alt": {
+            "zh": "Woolworths 团队分析海报：以 SWOT 与信任方程分析促销透明度和消费者信任",
+            "en": "Team poster applying SWOT and the Trust Equation to Woolworths promotional transparency and consumer trust"
+          },
+          "pdf": "assets/projects-woolworths-v27/poster.pdf",
+          "page": 1
+        },
+        {
+          "id": "report-cover",
+          "src": "assets/projects-woolworths-v27/report-cover.webp",
+          "label": {
+            "zh": "报告封面",
+            "en": "Report cover"
+          },
+          "alt": {
+            "zh": "咨询提案封面：Consumer Trust and Promotional Pricing Transparency at Woolworths Group",
+            "en": "Consulting proposal cover: Consumer Trust and Promotional Pricing Transparency at Woolworths Group"
+          },
+          "pdf": "assets/projects-woolworths-v27/report.pdf",
+          "page": 2
+        },
+        {
+          "id": "report-analysis",
+          "src": "assets/projects-woolworths-v27/report-analysis.webp",
+          "label": {
+            "zh": "关键分析 · 信任方程",
+            "en": "Key analysis · Trust Equation"
+          },
+          "alt": {
+            "zh": "报告第 12 页：使用信任方程分析消费者信任与促销透明度",
+            "en": "Report page 12: the Trust Equation analysis of consumer trust and promotional transparency"
+          },
+          "pdf": "assets/projects-woolworths-v27/report.pdf",
+          "page": 12
+        }
+      ],
+      "details": [
+        {
+          "id": "overview",
+          "title": {
+            "zh": "项目简介",
+            "en": "Project overview"
+          },
+          "paragraphs": [
+            {
+              "zh": "这是 MGMT90148 Consulting Principles and Practice 课程的团队项目；我们围绕 Woolworths 的促销定价透明度与消费者信任展开研究，将问题从价格本身延伸到促销信息可信度、定价治理与声誉风险，形成分析海报和咨询提案",
+              "en": "A team project for MGMT90148 Consulting Principles and Practice; we examined promotional pricing transparency and consumer trust at Woolworths, extending the problem beyond price to the credibility of promotional information, pricing governance and reputational risk; the work was presented as an analysis poster and a consulting proposal"
+            }
+          ]
+        },
+        {
+          "id": "participation",
+          "title": {
+            "zh": "我的参与",
+            "en": "My participation"
+          },
+          "paragraphs": [
+            {
+              "zh": "我参与了整个项目流程，与团队共同推进问题界定、资料研究、框架分析、洞察与方案讨论，以及 Poster 和 Report 的整合呈现",
+              "en": "I participated throughout the project, working with the team on problem definition, background research, framework-based analysis, discussion of insights and possible approaches, and the integration of the poster and report"
+            }
+          ]
+        },
+        {
+          "id": "analysis",
+          "title": {
+            "zh": "核心分析内容",
+            "en": "Core analysis"
+          },
+          "paragraphs": [],
+          "points": [
+            {
+              "zh": "消费者旅程图：梳理消费者体验中的信任触点，理解促销信息如何影响感知",
+              "en": "Customer journey mapping: identifying trust touchpoints in the consumer experience and how promotional information shapes perceptions"
+            },
+            {
+              "zh": "信任方程：分析促销沟通、企业行为与消费者信任之间的关系",
+              "en": "The Trust Equation: examining the relationship between promotional communication, company behaviour and consumer trust"
+            },
+            {
+              "zh": "五问根因分析：逐层追溯促销透明度问题背后的原因",
+              "en": "Five Whys: tracing potential underlying causes of promotional transparency issues"
+            },
+            {
+              "zh": "利益相关者与风险映射：梳理相关方及其关注点，识别治理和声誉风险",
+              "en": "Stakeholder and risk mapping: examining stakeholder concerns and identifying governance and reputational risks"
+            },
+            {
+              "zh": "SWOT 与 TOWS：在海报中组织内外部因素，并讨论可能的策略方向",
+              "en": "SWOT and TOWS: organising internal and external factors in the poster and considering possible strategic directions"
+            }
+          ]
+        },
+        {
+          "id": "outputs",
+          "title": {
+            "zh": "交付成果",
+            "en": "Deliverables"
+          },
+          "paragraphs": [
+            {
+              "zh": "Poster：1 页分析海报，将 SWOT 与信任方程结合，呈现问题、框架、洞察和建议方向",
+              "en": "Poster: a one-page analysis combining SWOT and the Trust Equation to present the problem, frameworks, insights and suggested directions"
+            },
+            {
+              "zh": "Report：26 页团队咨询提案，包含研究范围、分析框架、利益相关者、风险，以及促销透明度审查、定价治理和信任沟通的后续研究方向",
+              "en": "Report: a 26-page team consulting proposal covering the scope, analytical frameworks, stakeholders, risks and further research directions for promotional transparency, pricing governance and trust communication"
+            }
+          ]
+        }
+      ],
+      "deliverables": [
+        {
+          "id": "poster",
+          "label": {
+            "zh": "查看海报 PDF",
+            "en": "Open poster PDF"
+          },
+          "src": "assets/projects-woolworths-v27/poster.pdf",
+          "pages": 1
+        },
+        {
+          "id": "report",
+          "label": {
+            "zh": "查看报告 PDF",
+            "en": "Open report PDF"
+          },
+          "src": "assets/projects-woolworths-v27/report.pdf",
+          "pages": 26
+        }
+      ]
+    },
+    {
+      "id": "project-5d85fe00-b9d9-4b0e-aa88-4ad3256d3e09",
+      "kind": "project",
+      "title": {
+        "zh": "求职申请Agent",
+        "en": ""
+      },
+      "subtitle": {
+        "zh": "",
+        "en": ""
+      },
+      "summary": {
+        "zh": "自动网上检索每日各个公司符合的岗位\n\n根据自身数据库和JD描述智能生成匹配简历\n\n自动填写简历内容",
+        "en": ""
+      },
+      "displayTitle": {
+        "zh": "",
+        "en": ""
+      },
+      "subject": {
+        "zh": "正在赶来的路上，敬请期待",
+        "en": ""
+      },
+      "kindLabel": {
+        "zh": "",
+        "en": ""
+      },
+      "participationLabel": {
+        "zh": "",
+        "en": ""
+      },
+      "sourceNote": {
+        "zh": "",
+        "en": ""
+      },
+      "tags": [],
+      "slides": [],
+      "details": [],
+      "deliverables": []
+    }
+  ]
+}

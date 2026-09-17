@@ -1,0 +1,551 @@
+{
+  "schemaVersion": 1,
+  "createdAt": "2026-09-17T15:15:54.897885+00:00",
+  "buildId": "fcea46e95d64df81",
+  "entrypoints": [
+    "index.html",
+    "studio-preview.html"
+  ],
+  "files": [
+    {
+      "path": "assets/audio/opening-score.mp3",
+      "size": 404210,
+      "sha256": "03a058ac137d7edb39a5100d0de06349f76726d0ef255b061d90bc61d4d4f7bc"
+    },
+    {
+      "path": "assets/audio/site-background.mp3",
+      "size": 4738610,
+      "sha256": "dc4ccb4c3ce77da14ed44ff7f1678ffe7f45cd0775e0c665490ffcd882d4311e"
+    },
+    {
+      "path": "assets/jasong-app/FloatingLanyardScene-CKGB0mk6.js",
+      "size": 13912,
+      "sha256": "313377511d5e80d89f783d8da0a1804826176c7c446ef9a93ddb685389e3c23f"
+    },
+    {
+      "path": "assets/jasong-app/IdentityBadge-MAJJ2R5R.js",
+      "size": 45117,
+      "sha256": "17c4fc2c7bef90cf9873ece786169cb05f900b29bb7ff2ac2d6ac12cffc9a28a"
+    },
+    {
+      "path": "assets/jasong-app/LanyardProfile-BgR3CF0b.js",
+      "size": 17118,
+      "sha256": "ec115a406c2ffe8b60200bf87e38d512bb5a842a70db36b14584e7da33586ebf"
+    },
+    {
+      "path": "assets/jasong-app/SiteContext-CnqCaF0u.js",
+      "size": 24026,
+      "sha256": "35e94c479f22f10a0a2f00fe1b2c57044a7d2644bb9a8bc2f0965e69133c7f5c"
+    },
+    {
+      "path": "assets/jasong-app/app.css",
+      "size": 341354,
+      "sha256": "b4453fd7a071b5e00c6c76c38e323f37295c713caa7295fdb17570fed3e2848b"
+    },
+    {
+      "path": "assets/jasong-app/app.js",
+      "size": 542510,
+      "sha256": "3aa9db4a299ae7fd9540482239b02aa2e89e6a9ef66bd7d9305003785e586e8c"
+    },
+    {
+      "path": "assets/jasong-app/lanyard-card-materials-LX65jeET.js",
+      "size": 3192092,
+      "sha256": "422bcf17a0d518a5ed7f74116181c037113824ced85a50abdbdc12e32def51b9"
+    },
+    {
+      "path": "assets/jasong-next/OFL.txt",
+      "size": 9030,
+      "sha256": "fecc477d6b083fd9eeac39921b83262ad5bc56e1a5d061ed0d11a99a263e87c0"
+    },
+    {
+      "path": "assets/jasong-next/archive-terminal.png",
+      "size": 1975396,
+      "sha256": "fc9754d6c58d0bf64f140813c2c6d4e6548b31b556b6e0e1244420b0352d0b03"
+    },
+    {
+      "path": "assets/jasong-next/armor.png",
+      "size": 2358950,
+      "sha256": "ebaa7411d30e76df3171c024098386ac0dee9866b84be9f2ef3334d022130c02"
+    },
+    {
+      "path": "assets/jasong-next/favicon.svg",
+      "size": 315,
+      "sha256": "d6628f6731bb03b05771f15ec6813203e89d4162fbc7607a005a4b0ec0a683aa"
+    },
+    {
+      "path": "assets/jasong-next/holographic-desk.png",
+      "size": 2422510,
+      "sha256": "9a54b60889555e580722331382ff4941fcabf393ec4b8ef8fc33e3aa0724aee5"
+    },
+    {
+      "path": "assets/jasong-next/home-art.png",
+      "size": 1699594,
+      "sha256": "10f49fbdf606d0ffaae4a222daf54e2c21c0a61e7951d31f7e1a64a7288f073e"
+    },
+    {
+      "path": "assets/jasong-next/id-portrait.png",
+      "size": 2001920,
+      "sha256": "da4cd74b6b3dd20e7be3c38f480406d9fa004fc9bc21fa1c4c1746ce63765711"
+    },
+    {
+      "path": "assets/jasong-next/intro.mp4",
+      "size": 28078972,
+      "sha256": "7fa98a4a83e7dfab4f1632acecbfd74ce2d64e9dfc0b34d8fa64f9f93f0a147f"
+    },
+    {
+      "path": "assets/jasong-next/intro.png",
+      "size": 1867697,
+      "sha256": "1d7939dd977c4a1393b08f98214def630ecafa4a2eea19fc7960ffe0ef1349fd"
+    },
+    {
+      "path": "assets/jasong-next/travel-pack.png",
+      "size": 2073155,
+      "sha256": "a44eed9dcbc6a14263d85029490dcce3acd8ec7e7217d21ffd46755a558a6931"
+    },
+    {
+      "path": "assets/life-library/fitness-video-01.jpg",
+      "size": 75844,
+      "sha256": "696af833ce3b445f965e7a8b0ac8a8781f495438c6c0ac65a628428f93d87837"
+    },
+    {
+      "path": "assets/life-library/fitness-video-01.mp4",
+      "size": 390982,
+      "sha256": "564188f96c5c3f0015079d89f9d754202abec4decf1f6d2c7836209a35a2cde0"
+    },
+    {
+      "path": "assets/life-library/fitness-video-02.jpg",
+      "size": 38378,
+      "sha256": "3c0d1806a3c18f74810af1d8b5155236b6a8b4a82942224f4541411610d68b8f"
+    },
+    {
+      "path": "assets/life-library/fitness-video-02.mp4",
+      "size": 56673262,
+      "sha256": "ee6fb9632b38a33be26e9b357a39dff62a0bf09910b06908747224c0df6fb209"
+    },
+    {
+      "path": "assets/life-library/gaming-video-01.jpg",
+      "size": 32985,
+      "sha256": "afa7bfff881f42bb7be040cbbbf205fa67115d252ddb6b99d9287e42105c1f32"
+    },
+    {
+      "path": "assets/life-library/gaming-video-01.mp4",
+      "size": 7205701,
+      "sha256": "435c2e9f317450dda6d26f92aa7268639a688eacb5f6d77790032a9ca037d140"
+    },
+    {
+      "path": "assets/life-library/gaming-video-02.jpg",
+      "size": 3832,
+      "sha256": "b59798ae47e2597cd24ddda7b62de038edf70d4cbdae3293cc7f2159758564e4"
+    },
+    {
+      "path": "assets/life-library/gaming-video-02.mp4",
+      "size": 13543149,
+      "sha256": "c968ffd46b810364e3f0e8deda17a34fcba6dae9e8a293e0399089041d1d7f0a"
+    },
+    {
+      "path": "assets/life-library/study-photo-002.jpg",
+      "size": 144946,
+      "sha256": "e856067f4602af525aeeb96a4692ea7390439646aa178551ccdbea7f946c35b1"
+    },
+    {
+      "path": "assets/life-library/study-photo-003.jpg",
+      "size": 63769,
+      "sha256": "87e2cd8a1fda572a3618c75f5f1c01e247891ba764b66973d0301272311d9b72"
+    },
+    {
+      "path": "assets/life-library/study-photo-004.jpg",
+      "size": 131405,
+      "sha256": "77d28ab726b6553e6f5cc230b610f8afdfc201cef2cede784525313a4d98c565"
+    },
+    {
+      "path": "assets/life-library/study-photo-005.jpg",
+      "size": 169405,
+      "sha256": "aa2e3143e795638b2902d4ecc3cc97acf736bff5ae72af0baf9986476b74b9ca"
+    },
+    {
+      "path": "assets/life-library/study-photo-006.jpg",
+      "size": 127027,
+      "sha256": "db0d098e204917b6f4589eef261566004b953c4995121016e91887b199b92c2b"
+    },
+    {
+      "path": "assets/life-library/study-photo-007.jpg",
+      "size": 104423,
+      "sha256": "f5287d3b95d26620e4ed87d09a6a4e531ad14df6de34344130c340613e59ba78"
+    },
+    {
+      "path": "assets/life-library/study-photo-008.jpg",
+      "size": 139970,
+      "sha256": "93beb4cfe22ec70a86de2f843d57b2786f1a02deb373c2b96db9498eb38ebf3d"
+    },
+    {
+      "path": "assets/life-library/study-photo-009.jpg",
+      "size": 597178,
+      "sha256": "cc7628f00b0604599c013c6e40d28f184955412a5b186968aeed47d6da09d13d"
+    },
+    {
+      "path": "assets/life-library/study-photo-010.jpg",
+      "size": 150072,
+      "sha256": "ce347d609324f0e831f27ac5f41d20c6bc1d4e8a48e76a87349da6cc3ea32d1e"
+    },
+    {
+      "path": "assets/life-library/study-photo-011.jpg",
+      "size": 161334,
+      "sha256": "7fe13981f6194f7306949e20735517df345c7d52dfb6590524cbbc693ba992da"
+    },
+    {
+      "path": "assets/life-library/study-photo-012.jpg",
+      "size": 108622,
+      "sha256": "4b60ca2dc4584d92fd6e0851c1f528d2fbf41428f4b4da82f62a04a02163e7f7"
+    },
+    {
+      "path": "assets/life-library/study-photo-013.jpg",
+      "size": 247241,
+      "sha256": "45366c49e1a5d1940220fec2c205ac345f7bd6c48109de9aaea1b59e36262d86"
+    },
+    {
+      "path": "assets/life-library/study-photo-014.jpg",
+      "size": 104604,
+      "sha256": "364ea210d3e7d18e4ff774e83dd99e0596c750c14bfbffd91f52bf7ca0f62f7f"
+    },
+    {
+      "path": "assets/life-library/study-photo-015.jpg",
+      "size": 116779,
+      "sha256": "cfba30348442aea44c755224c4e0bbc1b5fa05b5ce0adaccf0ffc2e0ab7b15a6"
+    },
+    {
+      "path": "assets/life-library/study-photo-016.jpg",
+      "size": 215175,
+      "sha256": "56382413d248863c89d32e4b5c254ecc4eb2a337cff6ecdf0b63005b8aa04e47"
+    },
+    {
+      "path": "assets/life-library/study-photo-017.jpg",
+      "size": 401946,
+      "sha256": "af0539bcafddd3c4b8b0c28da9ead1daa5c2a022622dc2ac0ed7cd009b7629c0"
+    },
+    {
+      "path": "assets/life-library/study-photo-018.jpg",
+      "size": 87833,
+      "sha256": "07a6d3df90f336164246af4847159f7432b3329770e0ddd71df5851df00d8023"
+    },
+    {
+      "path": "assets/life-library/study-photo-019.jpg",
+      "size": 57070,
+      "sha256": "4f7282af3e665634971b432fd96134a00f53cc04cba6e99342d9337addc415da"
+    },
+    {
+      "path": "assets/life-library/study-photo-020.jpg",
+      "size": 56476,
+      "sha256": "fc5f0cbb371494de582859fdea6ef3f0aecb1a27f74a4f222b7f3fd805a2b32c"
+    },
+    {
+      "path": "assets/life-library/study-photo-021.jpg",
+      "size": 173192,
+      "sha256": "8e317e9f046735c7618c2745be16277c722fe2d13ab88232ab1f31c467e473c0"
+    },
+    {
+      "path": "assets/life-library/study-photo-022.jpg",
+      "size": 86040,
+      "sha256": "98c54fe531b09e14034ebbca74fd035801ae6bd5d07daeafd51238449bc38527"
+    },
+    {
+      "path": "assets/life-library/study-photo-023.jpg",
+      "size": 38794,
+      "sha256": "dcecbcb5156ebd53e32d59729c15d7909d6d4e2aac1db85c569d664481b1625d"
+    },
+    {
+      "path": "assets/life-library/study-photo-024.jpg",
+      "size": 21881,
+      "sha256": "e32fa21b8335926804cc1d467228679115e3f720d1f5f358cf1d80fa0db1a009"
+    },
+    {
+      "path": "assets/life-library/study-photo-025.jpg",
+      "size": 136800,
+      "sha256": "cf7222b59014a611bb1de9e70373990d9e1c8a755065355103621148b6e90d6c"
+    },
+    {
+      "path": "assets/life-library/study-photo-026.jpg",
+      "size": 101736,
+      "sha256": "10a5109788bf3870debe828a9a97b0fff8ec37dfba5fe4b7679dd6a9546680f1"
+    },
+    {
+      "path": "assets/life-library/study-photo-027.jpg",
+      "size": 50015,
+      "sha256": "00f93fdff93dd178fddacb7a7b4469cb5b666f01c8778023b094edc5799e8c3d"
+    },
+    {
+      "path": "assets/life-library/study-photo-028.jpg",
+      "size": 84723,
+      "sha256": "66e05db6230eee270e98e1e809030febbaf3fa534cd387b34e3207a5190310fb"
+    },
+    {
+      "path": "assets/life-library/study-photo-029.jpg",
+      "size": 118710,
+      "sha256": "05bf2700627ba02f05916f59aa8ae2b0eed400abac101b75fae040694390ddd2"
+    },
+    {
+      "path": "assets/life-library/study-photo-030.jpg",
+      "size": 211452,
+      "sha256": "0c31ed206518fe26b509a99639b7b96b60ad200166b6c21e388c0d13240212b5"
+    },
+    {
+      "path": "assets/life-library/study-photo-031.jpg",
+      "size": 162518,
+      "sha256": "d0fe18dc9bed6da5a1c38514358fa553eb7cd21f460cd4e4e6f4d5b47c051c20"
+    },
+    {
+      "path": "assets/life-library/study-photo-032.jpg",
+      "size": 117587,
+      "sha256": "9b119ec78addf694c8828681c3041c6318a6dbae4730d42c011a132451a6d9f3"
+    },
+    {
+      "path": "assets/life-library/study-photo-033.jpg",
+      "size": 171751,
+      "sha256": "b37073c992cbea37331bdda79f5459bf965db1bab6364cbd030027bb071d892a"
+    },
+    {
+      "path": "assets/life-library/study-photo-034.jpg",
+      "size": 204219,
+      "sha256": "eaa8fb6ac5fc8f06ac1e0c51d37f3f9ac33e4ddb7ca19a42a9d27089a6ed65aa"
+    },
+    {
+      "path": "assets/life-library/study-photo-035.jpg",
+      "size": 211507,
+      "sha256": "eab5e121af542a5b11a4e6ec6c2bd82f44a6eec48b294400db64962e296a0c6a"
+    },
+    {
+      "path": "assets/life-library/study-photo-036.jpg",
+      "size": 171378,
+      "sha256": "a9bb1496a2b7f8e6ad12faac28ee0bcc2fe9a644240f2c62ed5b8648b4191db3"
+    },
+    {
+      "path": "assets/life-library/study-photo-037.jpg",
+      "size": 115835,
+      "sha256": "bda6a9028b15523563b72babaea66457476fe4a837b6409b24e9a45fdc13e3a3"
+    },
+    {
+      "path": "assets/life-library/study-photo-038.jpg",
+      "size": 333471,
+      "sha256": "15f3899af096c65aabb4387b3bef6087cfbe80399fa522310b2771c5dab8e737"
+    },
+    {
+      "path": "assets/life-library/study-photo-039.jpg",
+      "size": 346798,
+      "sha256": "cf16f91771f9149ab010cb9ff5e9c6feb0a3435842e699109c988afb69254729"
+    },
+    {
+      "path": "assets/life-library/study-photo-040.jpg",
+      "size": 328406,
+      "sha256": "605eadd2847930e1e88add26b16f8ec0b7eb4808180248ba749b192d81d10c0f"
+    },
+    {
+      "path": "assets/life-library/study-photo-041.jpg",
+      "size": 81789,
+      "sha256": "9cfcb0b9786be1add363e3f496f3f681e9fa703ab369c178bd63cae7b82b4c6a"
+    },
+    {
+      "path": "assets/life-library/study-photo-042.jpg",
+      "size": 96624,
+      "sha256": "d26c2e0157cdfa9a30bb11beb2d5182b47b428df6216c559b49d357702caa86c"
+    },
+    {
+      "path": "assets/life-library/study-photo-043.jpg",
+      "size": 62697,
+      "sha256": "cbecf6dd42d1485c1f3d9f39467441284e77a3d5cb07ad9b0e22c6972c398534"
+    },
+    {
+      "path": "assets/life-library/study-photo-044.jpg",
+      "size": 152390,
+      "sha256": "d2eec55fb4bc61ff2cd9ac6fbec3fdfb5b887d5bdffc8fce3d028d32cf106dca"
+    },
+    {
+      "path": "assets/life-library/study-photo-045.jpg",
+      "size": 79000,
+      "sha256": "80cb504eb3051c434201b3a4636a4f18ee315399a88783e9b60f687542a0c05c"
+    },
+    {
+      "path": "assets/life-library/study-photo-046.jpg",
+      "size": 143348,
+      "sha256": "5da17a0e7bcb712aed3140ba4358c4f5852a8097a300e43f3528f88563d3c90e"
+    },
+    {
+      "path": "assets/life-library/study-photo-047.jpg",
+      "size": 182640,
+      "sha256": "1c3d171c00c31c77a0fdee193363b6b38a168ebed9ba035cb0c2f34ead1eecc9"
+    },
+    {
+      "path": "assets/life-library/study-photo-048.jpg",
+      "size": 194025,
+      "sha256": "3337567a8ab3154769552be649f80568a64d39b8a8810fa92041f4e5771fd019"
+    },
+    {
+      "path": "assets/life-library/study-photo-049.jpg",
+      "size": 93622,
+      "sha256": "be654393b306d331830e4ec9dc086fda4758d24b8ae9b896c2886cebdf7dc03c"
+    },
+    {
+      "path": "assets/life-library/study-video-01.jpg",
+      "size": 173938,
+      "sha256": "e718b5fc7853584f841baf028798c689d2ef3c7eb4902373e06155fa6aba69dd"
+    },
+    {
+      "path": "assets/life-library/study-video-01.mp4",
+      "size": 28288082,
+      "sha256": "cdf5560ba2c37cad30f8231cf5d94ab71bba2d61d068f1cacbeb50bd49265d62"
+    },
+    {
+      "path": "assets/life-library/study-video-02.jpg",
+      "size": 50841,
+      "sha256": "eff496d29f4565fa94f8c918f65f7f2b49f4ddc1707bb493853869cfdfdc5e64"
+    },
+    {
+      "path": "assets/life-library/study-video-02.mp4",
+      "size": 3126358,
+      "sha256": "8ef2f9e8c0872aebe0d5d36f92dbe3e3da5da09c08f051228d7924a5bc693a9b"
+    },
+    {
+      "path": "assets/life-library/study-video-03.jpg",
+      "size": 76897,
+      "sha256": "b094091436137a440b8a4abd36734ef881a1abffeda24778855c8f7d6576e2fb"
+    },
+    {
+      "path": "assets/life-library/study-video-03.mp4",
+      "size": 28689550,
+      "sha256": "08f14de265237247b7f099ffec18c3484af6dd6c9fa66640242fc098c8d55373"
+    },
+    {
+      "path": "assets/life-library/study-video-04.jpg",
+      "size": 47991,
+      "sha256": "d385408464865adce4bada547417b0413f5da5b3894a055ea3f747eee68e87c7"
+    },
+    {
+      "path": "assets/life-library/study-video-04.mp4",
+      "size": 1301670,
+      "sha256": "69a2b566f4766803fd8d0f6aca1e9cfd49876d1a60dd6b93c719474005797a34"
+    },
+    {
+      "path": "assets/life-library/study-video-05.jpg",
+      "size": 54905,
+      "sha256": "e982f0dee090adc874aadec054e25b7710829d9c74fd8991cb1fc6f7ce848768"
+    },
+    {
+      "path": "assets/life-library/study-video-05.mp4",
+      "size": 1305356,
+      "sha256": "b0d72d7ac7bee0788ad9b0990945b6e591ec992ac74e4804621b71152e67ed32"
+    },
+    {
+      "path": "assets/projects-woolworths-v27/poster.pdf",
+      "size": 5832963,
+      "sha256": "994e7f8d68279e99a1ab22df77e575fdb1c30a601fe7b8f838917c5c479e4cae"
+    },
+    {
+      "path": "assets/projects-woolworths-v27/poster.webp",
+      "size": 405488,
+      "sha256": "f6ad395111e4b5de9b01e10ecc687aca505ad80cb98b152f1bc794e2d1d6b1f3"
+    },
+    {
+      "path": "assets/projects-woolworths-v27/report-analysis.webp",
+      "size": 258248,
+      "sha256": "5160e3054b18b5da7295ea97ff99f9074676124f8551539fb70850efc28c343d"
+    },
+    {
+      "path": "assets/projects-woolworths-v27/report-cover.webp",
+      "size": 179548,
+      "sha256": "ae33730d6b5cdd6eb3c1932e1607675779c9772cbfb6c6077aafb651b79936a5"
+    },
+    {
+      "path": "assets/projects-woolworths-v27/report.pdf",
+      "size": 20145322,
+      "sha256": "d2c5c0de2347b81ad081810437c3e04b325cb59f828a085c153f46fb556dce88"
+    },
+    {
+      "path": "assets/yuanbao/happy.webm",
+      "size": 968184,
+      "sha256": "74bab0d3bedf5921c17b13bedc6cfa2a60a529c92098bcb3a1765c596a606379"
+    },
+    {
+      "path": "assets/yuanbao/happy.webp",
+      "size": 2537820,
+      "sha256": "7039520882e5b3f4f91394580c5f5c4621e866aebd1301f3b8089802f913007f"
+    },
+    {
+      "path": "assets/yuanbao/manifest.json",
+      "size": 2298,
+      "sha256": "d206d79cbd6738fd5bf5fc3013fba185d9b1230ee83f8b4f5f794e3a0ded6bf9"
+    },
+    {
+      "path": "assets/yuanbao/sleep.webm",
+      "size": 294653,
+      "sha256": "a7e1c0e11c86fcba72cdaf895752110efe4e625294b8fbc111195abfbc8029d0"
+    },
+    {
+      "path": "assets/yuanbao/sleep.webp",
+      "size": 1517616,
+      "sha256": "67e6402129caab1db50005459027d17537be62d1a6de03961f5a1b47f129ba8d"
+    },
+    {
+      "path": "assets/yuanbao/sleeping-hitmask.png",
+      "size": 358,
+      "sha256": "6b866c8da2be0a3ec5310a2e5d803ee770a65f40f8415db294915db20ecb4b7b"
+    },
+    {
+      "path": "assets/yuanbao/sleeping.png",
+      "size": 69280,
+      "sha256": "a4af9d36f84904005f9ec14b8be281ba7671b54c7f8e3fafa0763976ee69d302"
+    },
+    {
+      "path": "assets/yuanbao/standing-hitmask.png",
+      "size": 449,
+      "sha256": "088c27987ced3c6ddebf39fc63e8bd0b8a449c265d093b0342ffdb9ce179f8c0"
+    },
+    {
+      "path": "assets/yuanbao/standing.png",
+      "size": 104952,
+      "sha256": "f85a7636b2ef0ea85fc78bdba4f25f1b6d64171abe4b6a496e7dbf28437cbc01"
+    },
+    {
+      "path": "assets/yuanbao/treat.webm",
+      "size": 642105,
+      "sha256": "9a0ac4b88331b2f3b089a5294ec8e1f6e66e51228ac7420e3c78d7829755a8e4"
+    },
+    {
+      "path": "assets/yuanbao/treat.webp",
+      "size": 2277862,
+      "sha256": "7786864757eb38a12f0beb68153965601a1382ee0e066a0835627e59213e85c4"
+    },
+    {
+      "path": "assets/yuanbao/wake.webm",
+      "size": 662566,
+      "sha256": "5e51e36ec519a89e5ffdc04b9a96902db65fcd3b39b4f9d0e332c878ecba6fc4"
+    },
+    {
+      "path": "assets/yuanbao/wake.webp",
+      "size": 2058634,
+      "sha256": "a3296baaffc541e6c0a3917559c8a918cb6738b72d3862982319895f724fccb3"
+    },
+    {
+      "path": "assets/yuanbao/wave.webm",
+      "size": 512653,
+      "sha256": "48f0eccbf4b04d56f196f326aed6f7b4ed92414777126ae25d7cbdef7b60b9bf"
+    },
+    {
+      "path": "assets/yuanbao/wave.webp",
+      "size": 2365532,
+      "sha256": "36a115c613fb613b1f7f5fb468f170d5afe77cbc1b77af460cfbdaeb4b40f9f2"
+    },
+    {
+      "path": "assets/site-content/content.json",
+      "size": 48927,
+      "sha256": "a9be88b1c84786c432e2a5f9cfdf9ce2fbb9e9d4c7dca1ff7e1b6fae7c3f77f3"
+    },
+    {
+      "path": "index.html",
+      "size": 1381,
+      "sha256": "f0c900dabb681b3366e2feca7ffa72b73e472c1e1cce0a6867411b7f3fc7d63c"
+    },
+    {
+      "path": "studio-preview.html",
+      "size": 1381,
+      "sha256": "f0c900dabb681b3366e2feca7ffa72b73e472c1e1cce0a6867411b7f3fc7d63c"
+    }
+  ]
+}

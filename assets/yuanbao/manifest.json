@@ -1,0 +1,114 @@
+{
+  "version": 1,
+  "canvas": {
+    "width": 384,
+    "height": 384
+  },
+  "fps": 24,
+  "boundaryBlendMs": 125,
+  "boundaryBlendBaked": true,
+  "poses": {
+    "S": "standing.png",
+    "P": "sleeping.png"
+  },
+  "clips": {
+    "sleep": {
+      "label": "趴睡循环",
+      "files": {
+        "webm": "sleep.webm",
+        "webp": "sleep.webp"
+      },
+      "bytes": {
+        "webm": 294653,
+        "webp": 1517616
+      },
+      "durationMs": 5042,
+      "frameCount": 121,
+      "loop": true,
+      "firstPose": "P",
+      "lastPose": "P"
+    },
+    "wake": {
+      "label": "睡醒起身",
+      "files": {
+        "webm": "wake.webm",
+        "webp": "wake.webp"
+      },
+      "bytes": {
+        "webm": 662566,
+        "webp": 2058634
+      },
+      "durationMs": 6042,
+      "frameCount": 145,
+      "loop": false,
+      "firstPose": "P",
+      "lastPose": "S"
+    },
+    "wave": {
+      "label": "招手",
+      "files": {
+        "webm": "wave.webm",
+        "webp": "wave.webp"
+      },
+      "bytes": {
+        "webm": 512653,
+        "webp": 2365532
+      },
+      "durationMs": 5042,
+      "frameCount": 121,
+      "loop": false,
+      "firstPose": "S",
+      "lastPose": "S"
+    },
+    "happy": {
+      "label": "摸头开心",
+      "files": {
+        "webm": "happy.webm",
+        "webp": "happy.webp"
+      },
+      "bytes": {
+        "webm": 968184,
+        "webp": 2537820
+      },
+      "durationMs": 6042,
+      "frameCount": 145,
+      "loop": false,
+      "firstPose": "S",
+      "lastPose": "S"
+    },
+    "treat": {
+      "label": "傲娇讨罐罐",
+      "files": {
+        "webm": "treat.webm",
+        "webp": "treat.webp"
+      },
+      "bytes": {
+        "webm": 642105,
+        "webp": 2277862
+      },
+      "durationMs": 5042,
+      "frameCount": 121,
+      "loop": false,
+      "firstPose": "S",
+      "lastPose": "S"
+    }
+  },
+  "totalBytes": {
+    "webm": 3080161,
+    "webp": 10757464
+  },
+  "hitMasks": {
+    "S": {
+      "file": "standing-hitmask.png",
+      "width": 96,
+      "height": 96,
+      "threshold": 32
+    },
+    "P": {
+      "file": "sleeping-hitmask.png",
+      "width": 96,
+      "height": 96,
+      "threshold": 32
+    }
+  }
+}
