@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-09-17T15:15:54.897885+00:00",
-  "buildId": "fcea46e95d64df81",
+  "createdAt": "2026-09-17T16:27:41.499956+00:00",
+  "buildId": "e88e7b0008e63746",
   "entrypoints": [
     "index.html",
     "studio-preview.html"
@@ -18,39 +18,39 @@
       "sha256": "dc4ccb4c3ce77da14ed44ff7f1678ffe7f45cd0775e0c665490ffcd882d4311e"
     },
     {
-      "path": "assets/jasong-app/FloatingLanyardScene-CKGB0mk6.js",
+      "path": "assets/jasong-app/FloatingLanyardScene-YhIN5DAM.js",
       "size": 13912,
-      "sha256": "313377511d5e80d89f783d8da0a1804826176c7c446ef9a93ddb685389e3c23f"
+      "sha256": "8dd95d5c27b96a6faa8cfe92c72264020dddee60579490ef2f82ad7a8c6b765f"
     },
     {
-      "path": "assets/jasong-app/IdentityBadge-MAJJ2R5R.js",
-      "size": 45117,
-      "sha256": "17c4fc2c7bef90cf9873ece786169cb05f900b29bb7ff2ac2d6ac12cffc9a28a"
+      "path": "assets/jasong-app/IdentityBadge-BRPJVZFl.js",
+      "size": 45594,
+      "sha256": "87679ad4003021038f10c558d73de4c20680e6f05c690935b58e23487489dfc8"
     },
     {
-      "path": "assets/jasong-app/LanyardProfile-BgR3CF0b.js",
+      "path": "assets/jasong-app/LanyardProfile-DnBHkQQ8.js",
       "size": 17118,
-      "sha256": "ec115a406c2ffe8b60200bf87e38d512bb5a842a70db36b14584e7da33586ebf"
+      "sha256": "01d844f0121c2f894816e277835b6fdf21fd6ca6420c676b5cc999a3c1c590d0"
     },
     {
-      "path": "assets/jasong-app/SiteContext-CnqCaF0u.js",
-      "size": 24026,
-      "sha256": "35e94c479f22f10a0a2f00fe1b2c57044a7d2644bb9a8bc2f0965e69133c7f5c"
+      "path": "assets/jasong-app/SiteContext-CMMWA07R.js",
+      "size": 24624,
+      "sha256": "3bea935546bae43f673584d87c38cf9b2f36e4a0e44dfef400c6a64e76085117"
     },
     {
       "path": "assets/jasong-app/app.css",
-      "size": 341354,
-      "sha256": "b4453fd7a071b5e00c6c76c38e323f37295c713caa7295fdb17570fed3e2848b"
+      "size": 342766,
+      "sha256": "dc9657eaa4899e299a0716a33382a5c17239bdf264f2fb34ea6e29f1a7ac01c7"
     },
     {
       "path": "assets/jasong-app/app.js",
-      "size": 542510,
-      "sha256": "3aa9db4a299ae7fd9540482239b02aa2e89e6a9ef66bd7d9305003785e586e8c"
+      "size": 544650,
+      "sha256": "6528f48d900c4c464820755769d5459ae70d83f28b44f05fe336411744269a9e"
     },
     {
-      "path": "assets/jasong-app/lanyard-card-materials-LX65jeET.js",
+      "path": "assets/jasong-app/lanyard-card-materials-DBqYkVb4.js",
       "size": 3192092,
-      "sha256": "422bcf17a0d518a5ed7f74116181c037113824ced85a50abdbdc12e32def51b9"
+      "sha256": "97f28c448a250bf104de2bc8fd89221579a2ced039d3dde40b7e173c775eacfb"
     },
     {
       "path": "assets/jasong-next/OFL.txt",
@@ -540,12 +540,12 @@
     {
       "path": "index.html",
       "size": 1381,
-      "sha256": "f0c900dabb681b3366e2feca7ffa72b73e472c1e1cce0a6867411b7f3fc7d63c"
+      "sha256": "c1a56cbd54898d99b6438cc9ada0dbf82913e1a133fc28abfc7ebc0d397eb9bb"
     },
     {
       "path": "studio-preview.html",
       "size": 1381,
-      "sha256": "f0c900dabb681b3366e2feca7ffa72b73e472c1e1cce0a6867411b7f3fc7d63c"
+      "sha256": "c1a56cbd54898d99b6438cc9ada0dbf82913e1a133fc28abfc7ebc0d397eb9bb"
     }
   ]
 }

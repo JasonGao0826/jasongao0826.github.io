@@ -510,40 +510,50 @@ function h(e) {
 	c.current = e;
 	let l = (0, m.useRef)(n);
 	l.current = n;
-	let u = (0, m.useRef)(!0), d = (0, m.useRef)("untried"), f = (0, m.useRef)(!1), p = (0, m.useRef)(!1), h = (0, m.useRef)(0), g = (0, m.useRef)(null), _ = (0, m.useRef)(null), v = (0, m.useRef)(0), y = (0, m.useRef)(!1), b = (0, m.useRef)(!1), x = (0, m.useRef)(!1), S = (0, m.useRef)(null), C = (0, m.useCallback)(() => {
+	let u = (0, m.useRef)(!0), d = (0, m.useRef)("untried"), f = (0, m.useRef)(!1), p = (0, m.useRef)(0), h = (0, m.useRef)(null), g = (0, m.useRef)(null), _ = (0, m.useRef)(null), v = (0, m.useRef)(0), y = (0, m.useRef)(!1), b = (0, m.useRef)(!1), x = (0, m.useRef)(!1), S = (0, m.useRef)(null), C = (0, m.useCallback)(() => {
 		let e = t.current;
-		e && ((!e.paused || g.current !== null) && (++h.current, g.current = null, e.pause()), a(!1), s(d.current === "blocked" ? "blocked" : S.current === _.current ? "error" : "paused"));
-	}, []), w = (0, m.useCallback)(() => {
-		let e = t.current, n = c.current, r = l.current;
-		if (!e) return;
-		let i = n.active === "intro" && !b.current && !r?.ended ? "opening" : "background";
-		if (_.current !== i && (_.current === "background" && Number.isFinite(e.currentTime) && (v.current = e.currentTime), ++h.current, g.current = null, e.pause(), a(!1), _.current = i, S.current = null, y.current = i === "background", e.loop = i === "background", e.src = i === "opening" ? n.openingSrc : n.backgroundSrc, e.load()), e.volume = n.mediaPlaying ? 0 : n.volume, e.playbackRate = i === "opening" && r ? r.playbackRate : 1, e.readyState >= 1) {
-			let t = Number.isFinite(e.duration) ? e.duration : Infinity, n = i === "opening" && r ? r.currentTime : y.current ? v.current : null;
-			if (n !== null && Number.isFinite(n)) {
-				let r = Math.max(0, Math.min(n, Math.max(0, t - .025)));
-				Math.abs(e.currentTime - r) > .12 && (e.currentTime = r);
+		e && ((!e.paused || h.current !== null) && (++p.current, h.current = null, g.current = null, e.pause()), a(!1), s(d.current === "blocked" ? "blocked" : S.current === _.current ? "error" : "paused"));
+	}, []), w = (0, m.useCallback)(function e(n = !1) {
+		let r = t.current, i = c.current, o = l.current;
+		if (!r) return;
+		let m = i.active === "intro" && !b.current && !o?.ended ? "opening" : "background";
+		if (_.current !== m && (_.current === "background" && Number.isFinite(r.currentTime) && (v.current = r.currentTime), ++p.current, h.current = null, g.current = null, r.pause(), a(!1), _.current = m, S.current = null, y.current = m === "background", r.loop = m === "background", r.src = m === "opening" ? i.openingSrc : i.backgroundSrc, r.load()), r.volume = i.mediaPlaying ? 0 : i.volume, r.playbackRate = m === "opening" && o ? o.playbackRate : 1, r.readyState >= 1) {
+			let e = Number.isFinite(r.duration) ? r.duration : Infinity, t = m === "opening" && o ? o.currentTime : y.current ? v.current : null;
+			if (t !== null && Number.isFinite(t)) {
+				let n = Math.max(0, Math.min(t, Math.max(0, e - .025)));
+				Math.abs(r.currentTime - n) > .12 && (r.currentTime = n);
 			}
-			i === "background" && (y.current = !1);
+			m === "background" && (y.current = !1);
 		}
-		let o = !!r && !r.paused && !r.ended && !r.seeking && !x.current && r.readyState >= 3, m = i === "opening" && !!r && Number.isFinite(e.duration) && r.currentTime >= e.duration - .025;
-		if (!u.current || i === "opening" && (!o || m)) {
+		let w = !!o && !o.paused && !o.ended && !o.seeking && !x.current && o.readyState >= 3, T = m === "opening" && !!o && Number.isFinite(r.duration) && o.currentTime >= r.duration - .025;
+		if (!u.current) {
 			C();
 			return;
 		}
-		if (g.current !== null || !e.paused) return;
-		let w = p.current;
-		if (!w && (d.current === "blocked" || S.current === i || d.current === "untried" && f.current)) return;
-		d.current === "untried" && !w && (f.current = !0), p.current = !1;
-		let T = ++h.current;
-		g.current = T, s("loading"), e.play().then(() => {
-			T === h.current && (g.current = null, d.current = "granted", S.current = null, a(!e.paused), s(e.paused ? "paused" : "playing"));
+		let E = h.current !== null && g.current === h.current;
+		if (m === "opening" && (!w || T) && !n) {
+			E || C();
+			return;
+		}
+		if (!r.paused && h.current === null || h.current !== null && (!n || E) || !n && (d.current === "blocked" || S.current === m || d.current === "untried" && f.current)) return;
+		d.current === "untried" && !n && (f.current = !0);
+		let D = ++p.current;
+		h.current = D, s("loading"), g.current = n ? D : null, r.play().then(() => {
+			D === p.current && (h.current = null, g.current = null, d.current = "granted", S.current = null, a(!r.paused), s(r.paused ? "paused" : "playing"), e());
 		}).catch((e) => {
-			T === h.current && (g.current = null, a(!1), e instanceof DOMException && e.name === "NotAllowedError" ? (d.current = "blocked", s("blocked")) : (S.current = i, s("error")));
+			D === p.current && (h.current = null, g.current = null, a(!1), e instanceof DOMException && e.name === "NotAllowedError" ? (d.current = "blocked", s("blocked")) : (S.current = m, s("error")));
 		});
-	}, [C]), T = (0, m.useCallback)(() => {
+	}, [C]), T = (0, m.useCallback)((e) => {
+		e !== void 0 && (c.current = {
+			...c.current,
+			volume: Math.max(0, Math.min(1, e))
+		}), u.current = !0, S.current = null, w(!0);
+	}, [w]), E = (0, m.useCallback)(() => {
+		u.current = !1, C();
+	}, [C]), D = (0, m.useCallback)(() => {
 		let e = t.current;
-		e && (!e.paused || g.current !== null ? (u.current = !1, p.current = !1, C()) : (u.current = !0, p.current = !0, S.current = null, w()));
-	}, [C, w]), E = (0, m.useCallback)((e) => {
+		e && (!e.paused || h.current !== null ? E() : T());
+	}, [T, E]), O = (0, m.useCallback)((e) => {
 		let n = t.current;
 		if (n) {
 			if (e.type === "loadedmetadata") {
@@ -551,10 +561,10 @@ function h(e) {
 				return;
 			}
 			if (e.type === "error") {
-				++h.current, g.current = null, S.current = _.current, a(!1), s("error");
+				++p.current, h.current = null, g.current = null, S.current = _.current, a(!1), s("error");
 				return;
 			}
-			e.type === "playing" ? (a(!n.paused), n.paused || s("playing")) : e.type === "waiting" ? (!n.paused || g.current !== null) && (a(!1), s("loading")) : (e.type === "pause" || e.type === "ended") && (n.paused || n.ended) && (a(!1), s(d.current === "blocked" ? "blocked" : S.current === _.current ? "error" : "paused"));
+			e.type === "playing" ? (a(!n.paused), n.paused || s("playing")) : e.type === "waiting" ? (!n.paused || h.current !== null) && (a(!1), s("loading")) : (e.type === "pause" || e.type === "ended") && (n.paused || n.ended) && (a(!1), s(d.current === "blocked" ? "blocked" : S.current === _.current ? "error" : "paused"));
 		}
 	}, [w]);
 	return (0, m.useEffect)(() => {
@@ -592,15 +602,17 @@ function h(e) {
 			r.forEach((n) => e.removeEventListener(n, t));
 		};
 	}, [n, w]), (0, m.useEffect)(() => () => {
-		++h.current, g.current = null, t.current?.pause();
+		++p.current, h.current = null, g.current = null, t.current?.pause();
 	}, []), {
 		audioRef: t,
 		registerOpeningVideo: r,
 		playing: i,
 		audible: i && e.volume > 0 && !e.mediaPlaying,
 		musicPhase: o,
-		toggleMusic: T,
-		onAudioEvent: E
+		enableMusic: T,
+		pauseMusic: E,
+		toggleMusic: D,
+		onAudioEvent: O
 	};
 }
 //#endregion
@@ -656,13 +668,16 @@ function E({ children: e }) {
 		mediaPlaying: p,
 		openingSrc: b.openingSrc,
 		backgroundSrc: b.src
-	}), { playing: O, audible: k, musicPhase: A, toggleMusic: j, registerOpeningVideo: M } = D, N = (0, m.useCallback)((e) => {
+	}), { playing: O, audible: k, musicPhase: A, pauseMusic: j, toggleMusic: M, registerOpeningVideo: N } = D, P = (0, m.useCallback)(() => {
+		let e = d > 0 ? d : .5;
+		d <= 0 && f(e), D.enableMusic(e);
+	}, [D.enableMusic, d]), F = (0, m.useCallback)((e) => {
 		n(e), C("jasong-language", e);
-	}, []), P = (0, m.useCallback)((e) => {
+	}, []), I = (0, m.useCallback)((e) => {
 		f(Math.max(0, Math.min(1, e)));
-	}, []), F = (0, m.useCallback)((e) => {
+	}, []), L = (0, m.useCallback)((e) => {
 		y(e), C("jasong-yuanbao-resting", e ? "yes" : "no");
-	}, []), I = (0, m.useCallback)((e, t = !0) => {
+	}, []), R = (0, m.useCallback)((e, t = !0) => {
 		let n = {
 			welcome: "intro",
 			overview: "directory",
@@ -687,25 +702,27 @@ function E({ children: e }) {
 	}, []), /* @__PURE__ */ (0, v.jsxs)(w.Provider, {
 		value: {
 			lang: t,
-			setLang: N,
+			setLang: F,
 			motion: r,
 			setMotion: i,
 			visible: a,
 			active: s,
 			setActive: c,
-			go: I,
+			go: R,
 			profile: l,
 			setProfile: u,
 			playing: O,
 			audible: k,
 			musicPhase: A,
-			toggleMusic: j,
+			enableMusic: P,
+			pauseMusic: j,
+			toggleMusic: M,
 			volume: d,
-			setVolume: P,
+			setVolume: I,
 			setMediaPlaying: g,
-			registerOpeningVideo: M,
+			registerOpeningVideo: N,
 			petResting: _,
-			setPetResting: F,
+			setPetResting: L,
 			travel: T
 		},
 		children: [/* @__PURE__ */ (0, v.jsx)("audio", {

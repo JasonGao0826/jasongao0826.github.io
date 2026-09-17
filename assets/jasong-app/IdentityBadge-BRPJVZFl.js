@@ -1,4 +1,4 @@
-import { a as e, i as t, n, s as r, u as i } from "./SiteContext-CnqCaF0u.js";
+import { a as e, i as t, n, s as r, u as i } from "./SiteContext-CMMWA07R.js";
 //#region src/content/copy-defaults.json
 var a = /* @__PURE__ */ i(r()), o = e(), s = {
 	"experience.heading": {
@@ -272,6 +272,26 @@ var a = /* @__PURE__ */ i(r()), o = e(), s = {
 	"life.next": {
 		zh: "保持联系",
 		en: "Keep in touch"
+	},
+	"intro.soundEnter": {
+		zh: "开启声音，进入我的世界",
+		en: "Sound on, enter my world"
+	},
+	"intro.soundQuiet": {
+		zh: "静音浏览",
+		en: "Explore quietly"
+	},
+	"intro.soundLoading": {
+		zh: "正在开启声音",
+		en: "Starting sound"
+	},
+	"intro.soundReady": {
+		zh: "声音已开启",
+		en: "Sound is on"
+	},
+	"intro.soundRetry": {
+		zh: "声音暂未开启，请再次点击上方按钮",
+		en: "Sound has not started — tap the button above to retry"
 	},
 	"intro.text01": {
 		zh: "开场影片",
