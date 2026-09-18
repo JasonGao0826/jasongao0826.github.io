@@ -7773,57 +7773,57 @@ function he({ children: e }) {
 	let { active: t, go: r, visible: i, petResting: a, setPetResting: o } = n(), s = m(), [c, l] = (0, j.useState)(!1), [u, d] = (0, j.useState)([]), [f, p] = (0, j.useState)(0), [h, g] = (0, j.useState)(null), _ = (0, j.useRef)(null), v = (0, j.useRef)(null), y = (0, j.useRef)(0), b = (0, j.useRef)(0), [x, S] = (0, j.useState)({
 		id: 0,
 		action: "sleep"
-	}), [C, w] = (0, j.useState)(!1), T = (0, j.useRef)(0), E = (0, j.useRef)(!1), D = (0, j.useRef)(null), O = (0, j.useRef)(Date.now()), k = (0, j.useRef)({
+	}), [C, w] = (0, j.useState)(!1), T = (0, j.useRef)(0), E = (0, j.useRef)(!1), D = (0, j.useRef)("sleep"), O = (0, j.useRef)(null), k = (0, j.useRef)(Date.now()), A = (0, j.useRef)({
 		resting: a,
 		visible: i
 	});
-	k.current = {
+	A.current = {
 		resting: a,
 		visible: i
 	};
-	let A = (0, j.useCallback)(() => {
-		D.current !== null && clearTimeout(D.current), D.current = null;
-	}, []), M = (0, j.useCallback)((e) => {
-		A(), E.current = e !== "sleep", w(E.current), S({
+	let M = (0, j.useCallback)(() => {
+		O.current !== null && clearTimeout(O.current), O.current = null;
+	}, []), N = (0, j.useCallback)((e) => {
+		E.current && D.current === e || (M(), D.current = e, E.current = e !== "sleep", w(E.current), S({
 			id: ++T.current,
 			action: e
-		});
-	}, [A]), N = (0, j.useCallback)(function e() {
-		if (A(), k.current.resting || !k.current.visible || document.hidden || E.current) return;
-		let t = pe - (Date.now() - O.current);
+		}));
+	}, [M]), P = (0, j.useCallback)(function e() {
+		if (M(), A.current.resting || !A.current.visible || document.hidden || E.current) return;
+		let t = pe - (Date.now() - k.current);
 		if (t <= 0) {
-			k.current.resting = !0, o(!0), M("sleep");
+			A.current.resting = !0, o(!0), N("sleep");
 			return;
 		}
-		D.current = setTimeout(e, t);
+		O.current = setTimeout(e, t);
 	}, [
+		N,
 		M,
-		A,
 		o
-	]), P = (0, j.useCallback)(() => {
-		O.current = Date.now(), N();
-	}, [N]), F = (0, j.useCallback)((e) => {
+	]), F = (0, j.useCallback)(() => {
+		k.current = Date.now(), P();
+	}, [P]), I = (0, j.useCallback)((e) => {
 		if (e !== T.current) return;
 		let t = E.current;
-		E.current = !1, w(!1), t && P();
-	}, [P]);
-	(0, j.useEffect)(() => (N(), A), [
+		E.current = !1, w(!1), t && F();
+	}, [F]);
+	(0, j.useEffect)(() => (P(), M), [
 		a,
 		i,
-		N,
-		A
+		P,
+		M
 	]);
-	let I = (e, t) => {
+	let L = (e, t) => {
 		let n = {
 			id: ++y.current,
 			question: t,
 			reply: e
 		};
 		d((e) => [...e.slice(-11), n]);
-	}, L = () => {
+	}, ee = () => {
 		v.current && clearTimeout(v.current), v.current = null, g(null);
-	}, ee = (e) => {
-		L(), g(e), I({
+	}, R = (e) => {
+		ee(), g(e), L({
 			zh: {
 				text: e.zh,
 				actions: []
@@ -7832,38 +7832,37 @@ function he({ children: e }) {
 				text: e.en,
 				actions: []
 			}
-		}), v.current = setTimeout(L, 3800);
+		}), v.current = setTimeout(ee, 3800);
 	};
-	(0, j.useEffect)(() => (i || L(), () => {
+	(0, j.useEffect)(() => (i || ee(), () => {
 		v.current && clearTimeout(v.current);
 	}), [i]);
-	let R = (e = !0) => {
-		P(), l(!1), e && requestAnimationFrame(() => {
+	let z = (e = !0) => {
+		F(), l(!1), e && requestAnimationFrame(() => {
 			(_.current?.isConnected ? _.current : document.querySelector(".pet-body-button"))?.focus({ preventScroll: !0 });
 		});
-	}, z = () => {
-		P(), c || (_.current = document.activeElement instanceof HTMLElement ? document.activeElement : null), l(!0);
 	}, B = () => {
-		P(), !E.current && a && (o(!1), M("entrance"), ee({
+		F(), c || (_.current = document.activeElement instanceof HTMLElement ? document.activeElement : null), l(!0);
+	}, V = () => {
+		F(), !E.current && a && (o(!1), N("entrance"), R({
 			zh: "你来啦，圆宝醒了！今天想一起去哪儿？",
 			en: "You’re here! I’m awake — where shall we go together?"
 		}));
-	}, V = () => {
-		P(), o(!0), M("sleep"), ee({
+	}, H = () => {
+		F(), o(!0), N("sleep"), R({
 			zh: "圆宝先眯一会儿，想我了就叫醒我",
 			en: "Time for a little nap — wake me whenever you miss me"
 		});
-	}, H = () => {
-		if (P(), E.current) return;
-		if (a) {
-			ee({
+	}, te = () => {
+		if (F(), a) {
+			R({
 				zh: "轻轻摸一下，圆宝还在休息，醒来再陪你玩",
 				en: "A gentle pet while I nap — wake me when you want to play"
 			});
 			return;
 		}
 		let e = ++b.current;
-		p(e), M("happy"), ee(me[(e - 1) % me.length]);
+		p(e), N("happy"), R(me[(e - 1) % me.length]);
 	};
 	return /* @__PURE__ */ (0, U.jsx)(fe.Provider, {
 		value: {
@@ -7871,54 +7870,54 @@ function he({ children: e }) {
 			turns: u,
 			affection: f,
 			toast: h,
-			show: z,
-			close: R,
+			show: B,
+			close: z,
 			ask: (e) => {
-				P();
+				F();
 				let n = e.trim().slice(0, 400);
 				if (n && !a) {
 					if (/^(?:圆宝[，, ]*)?(?:休息|去休息|睡觉|睡吧|rest|sleep|take a nap)[！!~～\s]*$/i.test(n)) {
-						V();
-						return;
-					}
-					if (/^(?:圆宝[，, ]*)?(?:摸摸|摸摸你|pet|pet you)[！!~～\s]*$/i.test(n)) {
 						H();
 						return;
 					}
-					I({
+					if (/^(?:圆宝[，, ]*)?(?:摸摸|摸摸你|pet|pet you)[！!~～\s]*$/i.test(n)) {
+						te();
+						return;
+					}
+					L({
 						zh: de(n, "zh", t, s),
 						en: de(n, "en", t, s)
 					}, n);
 				}
 			},
 			introduce: () => {
-				P(), !a && I({
+				F(), !a && L({
 					zh: ce(t, "zh", s),
 					en: ce(t, "en", s)
 				});
 			},
-			pet: H,
-			rest: V,
-			wake: B,
+			pet: te,
+			rest: H,
+			wake: V,
 			navigate: (e) => {
-				P(), R(!1), r(e), requestAnimationFrame(() => {
+				F(), z(!1), r(e), requestAnimationFrame(() => {
 					let t = document.getElementById(e);
 					t && (t.tabIndex = -1, t.focus({ preventScroll: !0 }));
 				});
 			},
 			clear: () => {
-				P(), d([]);
+				F(), d([]);
 			},
 			animation: x,
 			busy: C,
 			treat: () => {
-				P(), !(E.current || a) && (M("treat"), ee({
+				F(), !a && (N("treat"), R({
 					zh: "罐罐收到啦，圆宝把今天的偏爱都分给你",
 					en: "A treat for me? You get all my affection today"
 				}));
 			},
-			finishAnimation: F,
-			recordActivity: P
+			finishAnimation: I,
+			recordActivity: F
 		},
 		children: e
 	});
@@ -13648,7 +13647,7 @@ var vs = [
 	"wave",
 	"happy",
 	"treat"
-], ys = 96, bs = 12e3, xs = class {
+], ys = 12e3, bs = class {
 	mount;
 	base;
 	preference;
@@ -13658,7 +13657,6 @@ var vs = [
 	video = document.createElement("video");
 	blobs = /* @__PURE__ */ new Map();
 	poses = {};
-	masks = {};
 	manifest;
 	initializing;
 	active;
@@ -13704,15 +13702,7 @@ var vs = [
 				let n = e.clips?.[t];
 				return !n?.files?.webm || !n.files.webp || !Number.isFinite(n.durationMs) || n.durationMs <= 0 || n.durationMs > 6e4 || !["P", "S"].includes(n.firstPose) || !["P", "S"].includes(n.lastPose);
 			})) throw Error("圆宝素材清单无效");
-			return this.manifest = e, await Promise.all(["P", "S"].map(async (t) => {
-				try {
-					let n = await this.loadImage(this.url(e.poses[t]), this.lifetime.signal);
-					this.poses[t] = n.src;
-				} catch {
-					this.poses[t] = this.url(e.poses[t]);
-				}
-				await this.loadMask(t);
-			})), this.destroyed || (this.selectedBackend = this.preference === "webp" ? "webp" : await this.checkAlphaVideo(this.url(e.clips.sleep.files.webm)) ? "webm" : "webp", this.destroyed) ? this : (this.initialized = !0, this.showPose("P"), this);
+			return this.manifest = e, this.poses.P = this.url(e.poses.P), this.poses.S = this.url(e.poses.S), this.destroyed || (this.selectedBackend = this.preference === "webp" ? "webp" : await this.checkAlphaVideo(this.url(e.clips.sleep.files.webm)) ? "webm" : "webp", this.destroyed) ? this : (this.initialized = !0, this.showPose("P"), this);
 		} catch (e) {
 			if (this.destroyed) return this;
 			throw this.notify("idle", { pose: "P" }), this.emit("yuanbao:error", { message: String(e) }), e;
@@ -13721,7 +13711,7 @@ var vs = [
 	async request(e, t, n) {
 		let r = new AbortController(), i = () => r.abort();
 		n.aborted ? r.abort() : n.addEventListener("abort", i, { once: !0 });
-		let a = window.setTimeout(i, bs);
+		let a = window.setTimeout(i, ys);
 		try {
 			let n = await fetch(this.url(e), { signal: r.signal });
 			if (!n.ok) throw Error(`圆宝素材加载失败 (${n.status})`);
@@ -13729,67 +13719,6 @@ var vs = [
 		} finally {
 			window.clearTimeout(a), n.removeEventListener("abort", i);
 		}
-	}
-	loadImage(e, t) {
-		return new Promise((n, r) => {
-			let i = new Image();
-			i.crossOrigin = "anonymous";
-			let a = !1, o = (e) => {
-				a || (a = !0, window.clearTimeout(c), t.removeEventListener("abort", s), i.onload = i.onerror = null, e ? (i.removeAttribute("src"), r(e)) : n(i));
-			}, s = () => o(/* @__PURE__ */ Error("圆宝图片加载已取消")), c = window.setTimeout(() => o(/* @__PURE__ */ Error("圆宝图片加载超时")), bs);
-			i.onload = () => o(), i.onerror = () => o(/* @__PURE__ */ Error("圆宝图片加载失败")), t.addEventListener("abort", s, { once: !0 }), t.aborted ? s() : i.src = e;
-		});
-	}
-	async loadMask(e) {
-		let t = this.manifest?.hitMasks?.[e]?.file;
-		if (t && !this.destroyed) try {
-			let n = await this.loadImage(this.url(t), this.lifetime.signal);
-			if (this.destroyed) return;
-			let r = document.createElement("canvas");
-			r.width = r.height = ys;
-			let i = r.getContext("2d", { willReadFrequently: !0 });
-			if (!i) return;
-			i.drawImage(n, 0, 0, ys, ys);
-			let a = i.getImageData(0, 0, ys, ys).data, o = /* @__PURE__ */ new Uint8ClampedArray(9216);
-			for (let e = 0; e < o.length; e++) o[e] = a[e * 4 + 3];
-			let s = [], c = /* @__PURE__ */ new Map();
-			for (let e = 0; e < ys; e++) {
-				let t = /* @__PURE__ */ new Map();
-				for (let n = 0; n < ys;) {
-					if (o[e * ys + n] === 0) {
-						n++;
-						continue;
-					}
-					let r = n;
-					for (; n < ys && o[e * ys + n] > 0;) n++;
-					let i = n - r, a = `${r}:${i}`, l = c.get(a);
-					if (l) l.height++, t.set(a, l);
-					else {
-						let n = {
-							x: r,
-							y: e,
-							width: i,
-							height: 1
-						};
-						s.push(n), t.set(a, n);
-					}
-				}
-				c = t;
-			}
-			this.masks[e] = {
-				alpha: o,
-				regions: s
-			};
-		} catch {}
-	}
-	hitTest(e, t, n) {
-		let r = this.masks[n];
-		if (!r || !Number.isFinite(e) || !Number.isFinite(t) || e < 0 || t < 0 || e > 1 || t > 1) return !1;
-		let i = Math.min(95, Math.floor(e * ys)), a = Math.min(95, Math.floor(t * ys));
-		return r.alpha[a * ys + i] > 0;
-	}
-	hitRegions(e) {
-		return this.masks[e]?.regions.map((e) => ({ ...e })) ?? [];
 	}
 	checkAlphaVideo(e) {
 		return new Promise((t) => {
@@ -13871,7 +13800,10 @@ var vs = [
 	start(e) {
 		if (this.destroyed) return Promise.resolve({ cancelled: !0 });
 		let t = this.manifest?.clips[e];
-		return !this.ready || !t ? Promise.reject(/* @__PURE__ */ Error("圆宝播放器尚未就绪")) : (this.cancel(), this.current = t, this.mount.dataset.clip = e, this.displayPose(t.firstPose), this.shouldAnimate ? (this.notify("loading", { key: e }), new Promise((n) => {
+		return !this.ready || !t ? Promise.reject(/* @__PURE__ */ Error("圆宝播放器尚未就绪")) : (this.cancel(), this.current = t, this.mount.dataset.clip = e, this.displayPose(t.firstPose), !this.shouldAnimate || this.backend === "static" ? (this.displayPose(t.lastPose), Promise.resolve({
+			completed: !0,
+			...this.shouldAnimate ? { staticFallback: !0 } : { reducedMotion: !0 }
+		})) : (this.notify("loading", { key: e }), new Promise((n) => {
 			let r = {
 				controller: new AbortController(),
 				cleanups: /* @__PURE__ */ new Set(),
@@ -13910,7 +13842,7 @@ var vs = [
 						if (!i()) return;
 						let o = URL.createObjectURL(n);
 						r.cleanups.add(() => URL.revokeObjectURL(o));
-						let c = a(() => s(!0, "备用动画加载超时"), bs);
+						let c = a(() => s(!0, "备用动画加载超时"), ys);
 						this.animation.onload = () => {
 							i() && (window.clearTimeout(c), this.animation.onload = null, this.poster.hidden = !0, this.animation.hidden = !1, this.notify("playing", { key: e }), t.loop ? this.settle(r, { looping: !0 }) : a(() => s(), t.durationMs));
 						}, this.animation.onerror = () => s(!0, "备用动画加载失败"), this.animation.src = o;
@@ -13925,14 +13857,16 @@ var vs = [
 			}
 			let u = () => {
 				l();
-			}, d = a(u, bs), f, p = !1, m = () => {
+			}, d = a(u, ys), f, p = !1, m = () => {
 				window.clearTimeout(f), f = void 0;
 			};
 			this.video.onerror = u, this.video.onended = () => {
 				c || s();
 			}, this.video.onwaiting = this.video.onstalled = () => {
-				p && !c && f === void 0 && (f = a(u, 8e3));
-			}, this.video.onplaying = m, this.video.onloadeddata = async () => {
+				p && !c && f === void 0 && (this.notify("loading", { key: e }), f = a(u, 8e3));
+			}, this.video.onplaying = () => {
+				m(), p && !c && this.notify("playing", { key: e });
+			}, this.video.onloadeddata = async () => {
 				if (i() && !c) {
 					this.video.onloadeddata = null;
 					try {
@@ -13945,18 +13879,25 @@ var vs = [
 					}
 				}
 			}, this.video.loop = t.loop, this.video.src = this.url(t.files.webm), this.video.load();
-		})) : (this.displayPose(t.lastPose), Promise.resolve({
-			completed: !0,
-			reducedMotion: !0
 		})));
 	}
 	destroy() {
-		this.destroyed || (this.destroyed = !0, this.initialized = !1, this.sequence++, this.cancel(), this.lifetime.abort(), this.video.pause(), this.video.removeAttribute("src"), this.video.load(), this.poster.removeAttribute("src"), this.animation.removeAttribute("src"), this.blobs.clear(), delete this.masks.P, delete this.masks.S, this.mount.replaceChildren());
+		this.destroyed || (this.destroyed = !0, this.initialized = !1, this.sequence++, this.cancel(), this.lifetime.abort(), this.video.pause(), this.video.removeAttribute("src"), this.video.load(), this.poster.removeAttribute("src"), this.animation.removeAttribute("src"), this.blobs.clear(), this.mount.replaceChildren());
 	}
-}, Ss = "jasong-yuanbao-position-v1", Cs = (e, t, n) => Math.max(t, Math.min(n, e));
+}, xs = "jasong-yuanbao-position-v1";
+function Ss(e, t) {
+	let n = t.type === "pointercancel" || t.type === "lostpointercapture", r = t.clientX - e.x, i = t.clientY - e.y, a = e.pointerType === "touch" ? 12 : 6, o = e.moved || !n && Math.hypot(r, i) >= a;
+	return {
+		dx: r,
+		dy: i,
+		moved: o,
+		suppressClick: o || n
+	};
+}
+var Cs = (e, t, n) => Math.max(t, Math.min(n, e));
 function ws() {
 	try {
-		let e = JSON.parse(localStorage.getItem(Ss) || "null");
+		let e = JSON.parse(localStorage.getItem(xs) || "null");
 		return e && Number.isFinite(e.x) && Number.isFinite(e.y) ? {
 			x: Cs(e.x, 0, 1),
 			y: Cs(e.y, 0, 1)
@@ -13966,7 +13907,7 @@ function ws() {
 	}
 }
 function Ts(e, t) {
-	let n = (0, j.useRef)(null), r = (0, j.useRef)(ws()), i = (0, j.useRef)(null), a = (0, j.useRef)(0), [o, s] = (0, j.useState)(null), [c, l] = (0, j.useState)(!1), [u, d] = (0, j.useState)(!!r.current), f = () => {
+	let n = (0, j.useRef)(null), r = (0, j.useRef)(ws()), i = (0, j.useRef)(null), a = (0, j.useRef)(0), o = (0, j.useRef)(!1), [s, c] = (0, j.useState)(null), [l, u] = (0, j.useState)(!1), [d, f] = (0, j.useState)(!!r.current), p = () => {
 		let e = n.current?.getBoundingClientRect();
 		if (!e?.width || !e.height) return null;
 		let t = document.documentElement.clientWidth, r = window.innerHeight, i = Math.min(t <= 760 ? 380 : 490, t - (t <= 760 ? 24 : 36)), a = Math.max(0, (i - e.width) / 2), o = 12 + a, s = Math.max(o, t - e.width - 12 - a), c = Math.max(12, r - e.height - 12);
@@ -13981,8 +13922,8 @@ function Ts(e, t) {
 			minY: Math.min(80, c),
 			maxY: c
 		};
-	}, p = (e, t, n = !1) => {
-		let i = f();
+	}, m = (e, t, n = !1) => {
+		let i = p();
 		if (!i) return;
 		e = Cs(e, i.minX, i.maxX), t = Cs(t, i.minY, i.maxY);
 		let a = (i.box.width - i.cloudWidth) / 2, o = {
@@ -13992,76 +13933,79 @@ function Ts(e, t) {
 			cloudWidth: i.cloudWidth,
 			cloudBelow: t < 160 && i.height - t - i.box.height >= 78
 		};
-		s(o), n && (r.current = {
+		c(o), n && (r.current = {
 			x: (e - i.minX) / Math.max(1, i.maxX - i.minX),
 			y: (t - i.minY) / Math.max(1, i.maxY - i.minY)
-		}, d(!0));
-	}, m = () => {
-		if (e || t) return;
-		let n = f();
-		n && (r.current ? p(n.minX + r.current.x * (n.maxX - n.minX), n.minY + r.current.y * (n.maxY - n.minY)) : p(n.width - n.box.width - n.cloudOverhang - (n.width <= 600 ? 12 : 24), n.height - n.box.height - (n.width <= 760 ? 72 : 82)));
+		}, f(!0));
 	}, h = () => {
+		if (e || t) return;
+		let n = p();
+		n && (r.current ? m(n.minX + r.current.x * (n.maxX - n.minX), n.minY + r.current.y * (n.maxY - n.minY)) : m(n.width - n.box.width - n.cloudOverhang - (n.width <= 600 ? 12 : 24), n.height - n.box.height - (n.width <= 760 ? 72 : 82)));
+	}, g = () => {
 		try {
-			r.current && localStorage.setItem(Ss, JSON.stringify(r.current));
+			r.current && localStorage.setItem(xs, JSON.stringify(r.current));
 		} catch {}
 	};
 	(0, j.useLayoutEffect)(() => {
-		if (m(), !n.current) return;
-		let e = new ResizeObserver(m);
-		return e.observe(n.current), window.addEventListener("resize", m), () => {
-			e.disconnect(), window.removeEventListener("resize", m);
+		if (h(), !n.current) return;
+		let e = new ResizeObserver(h);
+		return e.observe(n.current), window.addEventListener("resize", h), () => {
+			e.disconnect(), window.removeEventListener("resize", h);
 		};
 	}, [e, t]), (0, j.useLayoutEffect)(() => {
-		(e || t) && (i.current = null, l(!1));
+		(e || t) && (i.current = null, u(!1));
 	}, [e, t]);
-	let g = (t) => {
-		if (e || !t.isPrimary || t.button !== 0) return;
-		let r = n.current?.getBoundingClientRect();
-		r && (a.current = 0, i.current = {
-			id: t.pointerId,
-			x: t.clientX,
-			y: t.clientY,
-			left: r.left,
-			top: r.top,
+	let _ = (r) => {
+		if (!r.isPrimary || r.button !== 0 || (o.current = !1, a.current = 0, e || t)) return;
+		let s = n.current?.getBoundingClientRect();
+		s && (i.current = {
+			id: r.pointerId,
+			pointerType: r.pointerType,
+			x: r.clientX,
+			y: r.clientY,
+			left: s.left,
+			top: s.top,
 			moved: !1
-		}, t.currentTarget.setPointerCapture(t.pointerId));
-	}, _ = (e) => {
-		let t = i.current;
-		if (!t || t.id !== e.pointerId) return !1;
-		let n = e.clientX - t.x, r = e.clientY - t.y;
-		return !t.moved && Math.hypot(n, r) < 6 || (t.moved = !0, l(!0), e.preventDefault(), p(t.left + n, t.top + r, !0), !0);
+		}, r.currentTarget.setPointerCapture(r.pointerId));
 	}, v = (e) => {
 		let t = i.current;
-		t && t.id === e.pointerId && (i.current = null, l(!1), t.moved && (a.current = performance.now() + 500, h()), e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId));
-	}, y = () => {
-		r.current = null, d(!1);
+		if (!t || t.id !== e.pointerId) return !1;
+		let { dx: n, dy: r, moved: a } = Ss(t, e);
+		return !a || (t.moved || u(!0), t.moved = !0, e.preventDefault(), m(t.left + n, t.top + r, !0), !0);
+	}, y = (e) => {
+		let t = i.current;
+		if (!t || t.id !== e.pointerId) return;
+		let n = Ss(t, e);
+		e.type === "pointerup" && n.moved && m(t.left + n.dx, t.top + n.dy, !0), i.current = null, u(!1), o.current = n.suppressClick, n.suppressClick && (a.current = performance.now() + 500), n.moved && g(), e.currentTarget.hasPointerCapture(e.pointerId) && e.currentTarget.releasePointerCapture(e.pointerId);
+	}, b = () => {
+		r.current = null, f(!1);
 		try {
-			localStorage.removeItem(Ss);
+			localStorage.removeItem(xs);
 		} catch {}
-		m();
+		h();
 	};
 	return {
 		actorRef: n,
-		style: !e && o ? {
+		style: !e && s ? {
 			position: "fixed",
-			left: o.left,
-			top: o.top,
+			left: s.left,
+			top: s.top,
 			right: "auto",
 			bottom: "auto",
-			"--pet-cloud-left": `${o.cloudLeft}px`,
-			"--pet-cloud-width": `${o.cloudWidth}px`
+			"--pet-cloud-left": `${s.cloudLeft}px`,
+			"--pet-cloud-width": `${s.cloudWidth}px`
 		} : void 0,
-		dragging: c,
-		custom: u,
-		cloudBelow: o?.cloudBelow ?? !1,
-		reset: y,
-		onPointerDown: g,
-		onPointerMove: _,
-		onPointerEnd: v,
+		dragging: l,
+		custom: d,
+		cloudBelow: s?.cloudBelow ?? !1,
+		reset: b,
+		onPointerDown: _,
+		onPointerMove: v,
+		onPointerEnd: y,
 		onKeyDown: (t) => {
 			if (e) return;
 			if (t.key === "Home") {
-				t.preventDefault(), y();
+				t.preventDefault(), b();
 				return;
 			}
 			if (!t.altKey || ![
@@ -14071,16 +14015,19 @@ function Ts(e, t) {
 				"ArrowDown"
 			].includes(t.key)) return;
 			let r = n.current?.getBoundingClientRect();
-			r && (t.preventDefault(), p(r.left + (t.key === "ArrowLeft" ? -24 : t.key === "ArrowRight" ? 24 : 0), r.top + (t.key === "ArrowUp" ? -24 : t.key === "ArrowDown" ? 24 : 0), !0), h());
+			r && (t.preventDefault(), m(r.left + (t.key === "ArrowLeft" ? -24 : t.key === "ArrowRight" ? 24 : 0), r.top + (t.key === "ArrowUp" ? -24 : t.key === "ArrowDown" ? 24 : 0), !0), g());
 		},
 		hoverBlocked: () => !!i.current || performance.now() < a.current,
-		suppressClick: (e) => e !== 0 && performance.now() < a.current
+		suppressClick: (e) => e !== 0 && o.current
 	};
 }
 //#endregion
-//#region src/new-site/yuanbao/PetActor.tsx
-var Es = "M21 6H198L215 23V83L197 101H67L35 116L41 101H21L5 85V23Z";
-function Ds({ tone: e, text: t, disabled: n, onClick: r }) {
+//#region src/new-site/yuanbao/hit-paths.ts
+var Es = {
+	P: "M53 50h1v1h-1zM52 51h3v1h-3zM51 52h4v1h-4zM49 53h6v1h-6zM47 54h8v1h-8zM27 55h4v1h-4zM42 55h14v1h-14zM27 56h6v1h-6zM38 56h17v1h-17zM27 57h32v1h-32zM28 58h32v1h-32zM28 59h34v1h-34zM28 60h35v1h-35zM28 61h39v1h-39zM29 62h42v1h-42zM29 63h43v1h-43zM29 64h45v1h-45zM29 65h46v1h-46zM29 66h47v1h-47zM28 67h49v1h-49zM28 68h49v1h-49zM28 69h50v1h-50zM20 70h58v1h-58zM18 71h61v1h-61zM17 72h62v1h-62zM16 73h63v1h-63zM15 74h64v1h-64zM15 75h64v1h-64zM14 76h66v1h-66zM14 77h67v1h-67zM14 78h68v1h-68zM14 79h68v1h-68zM15 80h67v1h-67zM15 81h66v1h-66zM16 82h55v1h-55zM17 83h13v1h-13zM31 83h36v1h-36zM20 84h9v1h-9zM35 84h26v1h-26z",
+	S: "M68 9h1v1h-1zM67 10h3v1h-3zM66 11h4v1h-4zM64 12h6v1h-6zM43 13h1v1h-1zM63 13h7v1h-7zM43 14h4v1h-4zM61 14h9v1h-9zM43 15h6v1h-6zM54 15h16v1h-16zM43 16h27v1h-27zM43 17h27v1h-27zM43 18h27v1h-27zM44 19h26v1h-26zM44 20h26v1h-26zM44 21h27v1h-27zM44 22h27v1h-27zM44 23h28v1h-28zM44 24h28v1h-28zM44 25h29v1h-29zM44 26h29v1h-29zM43 27h30v1h-30zM43 28h30v1h-30zM43 29h30v1h-30zM43 30h30v1h-30zM43 31h29v1h-29zM43 32h29v1h-29zM42 33h29v1h-29zM41 34h29v1h-29zM41 35h29v1h-29zM41 36h31v1h-31zM40 37h32v1h-32zM40 38h33v1h-33zM39 39h34v1h-34zM39 40h34v1h-34zM40 41h34v1h-34zM40 42h34v1h-34zM41 43h32v1h-32zM42 44h30v1h-30zM41 45h33v1h-33zM40 46h35v1h-35zM39 47h36v1h-36zM39 48h37v1h-37zM38 49h38v1h-38zM38 50h39v1h-39zM38 51h39v1h-39zM38 52h40v1h-40zM38 53h40v1h-40zM38 54h41v1h-41zM39 55h39v1h-39zM39 56h39v1h-39zM33 57h4v1h-4zM39 57h39v1h-39zM31 58h7v1h-7zM40 58h38v1h-38zM30 59h9v1h-9zM40 59h37v1h-37zM30 60h9v1h-9zM41 60h36v1h-36zM29 61h10v1h-10zM42 61h34v1h-34zM28 62h11v1h-11zM42 62h32v1h-32zM28 63h10v1h-10zM42 63h32v1h-32zM28 64h10v1h-10zM42 64h33v1h-33zM28 65h10v1h-10zM42 65h34v1h-34zM28 66h11v1h-11zM42 66h34v1h-34zM28 67h48v1h-48zM28 68h48v1h-48zM29 69h46v1h-46zM29 70h44v1h-44zM30 71h43v1h-43zM31 72h41v1h-41zM31 73h41v1h-41zM32 74h39v1h-39zM34 75h24v1h-24zM59 75h12v1h-12zM35 76h22v1h-22zM60 76h10v1h-10zM38 77h6v1h-6zM46 77h11v1h-11zM60 77h10v1h-10zM46 78h10v1h-10zM60 78h12v1h-12zM46 79h10v1h-10zM60 79h14v1h-14zM45 80h11v1h-11zM61 80h13v1h-13zM45 81h11v1h-11zM61 81h14v1h-14zM44 82h12v1h-12zM61 82h14v1h-14zM44 83h12v1h-12zM62 83h12v1h-12zM45 84h10v1h-10zM67 84h2v1h-2zM70 84h1v1h-1zM48 85h1v1h-1zM50 85h1v1h-1z"
+}, Ds = "M21 6H198L215 23V83L197 101H67L35 116L41 101H21L5 85V23Z";
+function Os({ tone: e, text: t, disabled: n, onClick: r }) {
 	let i = (0, j.useId)();
 	return /* @__PURE__ */ (0, U.jsxs)("button", {
 		type: "button",
@@ -14126,15 +14073,15 @@ function Ds({ tone: e, text: t, disabled: n, onClick: r }) {
 					}),
 					/* @__PURE__ */ (0, U.jsx)("clipPath", {
 						id: `${i}-clip`,
-						children: /* @__PURE__ */ (0, U.jsx)("path", { d: Es })
+						children: /* @__PURE__ */ (0, U.jsx)("path", { d: Ds })
 					})
 				] }),
 				/* @__PURE__ */ (0, U.jsx)("path", {
 					className: "pet-bubble-halo",
-					d: Es
+					d: Ds
 				}),
 				/* @__PURE__ */ (0, U.jsx)("path", {
-					d: Es,
+					d: Ds,
 					fill: `url(#${i}-surface)`,
 					stroke: `url(#${i}-edge)`,
 					strokeWidth: "1.8",
@@ -14197,26 +14144,28 @@ function Ds({ tone: e, text: t, disabled: n, onClick: r }) {
 		}), /* @__PURE__ */ (0, U.jsx)("span", { children: t })]
 	});
 }
-function Os({ panelOpen: e }) {
-	let { lang: t, motion: r, visible: i, petResting: a } = n(), { animation: o, busy: s, wake: c, pet: l, treat: u, show: f, finishAnimation: p, recordActivity: m } = ge(), h = d(), g = (0, j.useRef)(null), _ = (0, j.useRef)(null), v = (0, j.useRef)(-1), y = (0, j.useRef)(null), [b, x] = (0, j.useState)(!1), [S, C] = (0, j.useState)(!1), [w, T] = (0, j.useState)(!0), [E, D] = (0, j.useState)("sleep"), [O, k] = (0, j.useState)(() => matchMedia("(max-width: 760px)").matches), [A, M] = (0, j.useState)(!1), N = a ? "P" : "S", P = t === "zh", F = A || h || e && O, I = Ts(e, F), L = r && i && !F;
+function ks({ panelOpen: e }) {
+	let { lang: t, motion: r, visible: i, petResting: a } = n(), { animation: o, busy: s, wake: c, pet: l, treat: u, show: f, finishAnimation: p, recordActivity: m } = ge(), h = d(), g = (0, j.useRef)(null), _ = (0, j.useRef)(null), v = (0, j.useRef)(-1), y = (0, j.useRef)(null), [b, x] = (0, j.useState)(!1), [S, C] = (0, j.useState)(!1), [w, T] = (0, j.useState)(!0), [E, D] = (0, j.useState)(!1), [O, k] = (0, j.useState)("P"), [A, M] = (0, j.useState)(!0), [N, P] = (0, j.useState)("sleep"), [F, I] = (0, j.useState)(() => matchMedia("(max-width: 760px)").matches), [L, ee] = (0, j.useState)(!1), R = a ? "P" : "S", z = t === "zh", B = L || h || e && F, V = Ts(e, B), H = r && i && !B;
 	(0, j.useEffect)(() => {
-		let e = matchMedia("(max-width: 760px)"), t = () => k(e.matches);
+		let e = matchMedia("(max-width: 760px)"), t = () => I(e.matches);
 		return e.addEventListener("change", t), () => e.removeEventListener("change", t);
 	}, []), (0, j.useEffect)(() => {
 		let e = g.current;
 		if (!e) return;
-		let t = !1, n = new xs(e, { baseUrl: "assets/yuanbao/" });
+		let t = !1, n = new bs(e, { baseUrl: "assets/yuanbao/" });
 		_.current = n;
 		let r = (e) => {
 			let t = e.detail;
-			t.state === "playing" && t.key ? D(t.key) : t.state === "idle" && t.pose && D(t.pose === "P" ? "sleep" : "standing");
+			T(t.state === "loading"), t.pose && k(t.pose), t.state === "playing" && t.key ? P(t.key) : t.state === "idle" && t.pose && P(t.pose === "P" ? "sleep" : "standing");
+		}, i = () => {
+			t || (T(!1), D(!0));
 		};
-		return e.addEventListener("yuanbao:state", r), n.init().then(() => {
+		return e.addEventListener("yuanbao:state", r), e.addEventListener("yuanbao:error", i), n.init().then(() => {
 			t || x(!0);
 		}).catch(() => {
 			t || C(!0);
 		}), () => {
-			t = !0, e.removeEventListener("yuanbao:state", r), n.destroy(), _.current = null;
+			t = !0, e.removeEventListener("yuanbao:state", r), e.removeEventListener("yuanbao:error", i), n.destroy(), _.current = null;
 		};
 	}, []), (0, j.useEffect)(() => {
 		if (!b && !S) return;
@@ -14225,46 +14174,47 @@ function Os({ panelOpen: e }) {
 			p(o.id);
 			return;
 		}
-		e.setMotion(L, !0);
+		e.setMotion(H, !0);
 		let t = !1;
-		if (!L) {
-			v.current = o.id, e.showPose(N), p(o.id);
+		if (!H) {
+			v.current = o.id, e.showPose(R), p(o.id);
 			return;
 		}
-		return a ? (v.current = o.id, e.play("sleep")) : v.current === o.id ? (e.showPose(N), p(o.id)) : (v.current = o.id, (o.action === "entrance" ? e.playEntrance() : o.action === "sleep" ? Promise.resolve() : e.play(o.action)).catch(() => e.showPose("S")).finally(() => {
-			t || (p(o.id), T(!0));
+		return a ? (v.current = o.id, e.play("sleep").catch(() => e.showPose("P"))) : v.current === o.id ? (e.showPose(R), p(o.id)) : (v.current = o.id, (o.action === "entrance" ? e.playEntrance() : o.action === "sleep" ? Promise.resolve() : e.play(o.action)).catch(() => e.showPose("S")).finally(() => {
+			t || p(o.id);
 		})), () => {
-			t = !0, e.showPose(N);
+			t = !0, e.showPose(R);
 		};
 	}, [
 		b,
 		S,
-		L,
+		H,
 		o.id,
 		o.action,
 		a,
-		N,
+		R,
 		p
 	]);
-	let ee = () => {
-		m(), M(!0), requestAnimationFrame(() => y.current?.focus({ preventScroll: !0 }));
-	}, R = () => {
-		m(), M(!1), requestAnimationFrame(() => I.actorRef.current?.querySelector(".pet-body-button")?.focus({ preventScroll: !0 }));
-	}, z = () => {
-		s || (a ? (T(!0), c()) : T((e) => !e));
-	}, B = (b ? _.current?.hitRegions(N) ?? [] : []).map((e) => `M${e.x} ${e.y}h${e.width}v${e.height}h-${e.width}z`).join(""), V = !a && !s && w && !e && !I.dragging, H = s ? P ? E === "wake" ? "慢慢醒来啦" : E === "wave" ? "和你打个招呼" : "圆宝正开心呢" : E === "wake" ? "Waking up" : E === "wave" ? "Hello there" : "A happy little moment" : a ? P ? "轻点唤醒 · 按住拖动" : "Tap to wake · hold to move" : P ? "圆宝 · 按住可以拖动" : "Yuanbao · hold to move";
+	let te = () => {
+		m(), ee(!0), requestAnimationFrame(() => y.current?.focus({ preventScroll: !0 }));
+	}, ne = () => {
+		m(), ee(!1), requestAnimationFrame(() => V.actorRef.current?.querySelector(".pet-body-button")?.focus({ preventScroll: !0 }));
+	}, re = () => {
+		a ? (M(!0), c()) : M((e) => !e);
+	}, ie = b && s && N === "wake" ? Es.P + Es.S : Es[b && !S ? O : R], ae = !a && A && !e && !V.dragging, oe = H && !S && (!b || w), se = S || E ? z ? "动作暂未加载 · 仍可互动" : "Motion unavailable · still here for you" : oe ? z ? "动作准备中 · 可以先互动" : "Loading motion · you can interact now" : s ? z ? N === "wake" ? "慢慢醒来啦" : N === "wave" ? "和你打个招呼" : "圆宝正开心呢" : N === "wake" ? "Waking up" : N === "wave" ? "Hello there" : "A happy little moment" : a ? z ? "轻点唤醒 · 按住拖动" : "Tap to wake · hold to move" : z ? "圆宝 · 按住可以拖动" : "Yuanbao · hold to move";
 	return /* @__PURE__ */ (0, U.jsxs)(U.Fragment, { children: [/* @__PURE__ */ (0, U.jsxs)("aside", {
-		ref: I.actorRef,
-		style: I.style,
+		ref: V.actorRef,
+		style: V.style,
 		className: "pet-actor",
 		"data-panel-open": e,
-		"data-dragging": I.dragging,
-		"data-cloud-below": I.cloudBelow,
+		"data-dragging": V.dragging,
+		"data-cloud-below": V.cloudBelow,
 		"data-busy": s,
-		"data-phase": E,
-		"data-motion": L,
-		hidden: F,
-		"aria-label": P ? "圆宝宠物互动" : "Yuanbao companion interactions",
+		"data-loading": oe,
+		"data-phase": N,
+		"data-motion": H,
+		hidden: B,
+		"aria-label": z ? "圆宝宠物互动" : "Yuanbao companion interactions",
 		onPointerDownCapture: m,
 		onPointerMoveCapture: m,
 		onPointerUpCapture: m,
@@ -14282,34 +14232,32 @@ function Os({ panelOpen: e }) {
 					/* @__PURE__ */ (0, U.jsx)("div", {
 						ref: g,
 						className: "pet-actor-media",
+						hidden: !b,
 						"aria-hidden": "true"
 					}),
 					/* @__PURE__ */ (0, U.jsx)("button", {
 						type: "button",
 						className: "pet-body-button",
 						onClick: (e) => {
-							I.suppressClick(e.detail) || z();
+							V.suppressClick(e.detail) || re();
 						},
-						"aria-label": a ? P ? "唤醒圆宝" : "Wake Yuanbao" : P ? "圆宝的互动气泡" : "Yuanbao interaction bubbles",
-						"aria-busy": s,
+						"aria-label": a ? z ? "唤醒圆宝" : "Wake Yuanbao" : z ? "圆宝的互动气泡" : "Yuanbao interaction bubbles",
 						"aria-describedby": "pet-drag-help",
-						"aria-expanded": V,
+						"aria-expanded": ae,
 						"aria-controls": "pet-cloud-actions",
-						onPointerDown: I.onPointerDown,
-						onPointerUp: I.onPointerEnd,
-						onPointerCancel: I.onPointerEnd,
-						onLostPointerCapture: I.onPointerEnd,
-						onKeyDown: I.onKeyDown,
+						onPointerDown: V.onPointerDown,
+						onPointerUp: V.onPointerEnd,
+						onPointerCancel: V.onPointerEnd,
+						onLostPointerCapture: V.onPointerEnd,
+						onKeyDown: V.onKeyDown,
 						onPointerMove: (e) => {
-							if (I.onPointerMove(e) || I.hoverBlocked() || e.buttons !== 0 || e.pointerType !== "mouse" || !a || s || !b) return;
-							let t = e.currentTarget.getBoundingClientRect();
-							_.current?.hitTest((e.clientX - t.left) / t.width, (e.clientY - t.top) / t.height, "P") && z();
+							V.onPointerMove(e) || V.hoverBlocked() || e.buttons !== 0 || e.pointerType !== "mouse" || !a || e.target.closest(".pet-body-hit path") && re();
 						},
 						children: /* @__PURE__ */ (0, U.jsx)("svg", {
 							className: "pet-body-hit",
 							viewBox: "0 0 96 96",
 							"aria-hidden": "true",
-							children: /* @__PURE__ */ (0, U.jsx)("path", { d: B })
+							children: /* @__PURE__ */ (0, U.jsx)("path", { d: ie })
 						})
 					})
 				]
@@ -14317,31 +14265,31 @@ function Os({ panelOpen: e }) {
 			/* @__PURE__ */ (0, U.jsx)("span", {
 				className: "pet-sr",
 				id: "pet-drag-help",
-				children: P ? "按住圆宝身体拖动换位置，轻点互动，键盘 Alt 加方向键移动，Home 恢复默认位置" : "Drag Yuanbao to move, tap to interact, use Alt plus arrow keys to move or Home to reset"
+				children: z ? "按住圆宝身体拖动换位置，轻点互动，键盘 Alt 加方向键移动，Home 恢复默认位置" : "Drag Yuanbao to move, tap to interact, use Alt plus arrow keys to move or Home to reset"
 			}),
 			/* @__PURE__ */ (0, U.jsxs)("div", {
 				id: "pet-cloud-actions",
 				className: "pet-clouds",
-				hidden: !V,
+				hidden: !ae,
 				role: "group",
-				"aria-label": P ? "和圆宝玩" : "Play with Yuanbao",
+				"aria-label": z ? "和圆宝玩" : "Play with Yuanbao",
 				onKeyDown: (e) => {
-					e.key === "Escape" && (T(!1), e.currentTarget.parentElement?.querySelector(".pet-body-button")?.focus());
+					e.key === "Escape" && (M(!1), e.currentTarget.parentElement?.querySelector(".pet-body-button")?.focus());
 				},
 				children: [
-					/* @__PURE__ */ (0, U.jsx)(Ds, {
+					/* @__PURE__ */ (0, U.jsx)(Os, {
 						tone: "cobalt",
-						text: P ? "摸摸我的头喵~" : "Pet my head, meow~",
+						text: z ? "摸摸我的头喵~" : "Pet my head, meow~",
 						onClick: l
 					}),
-					/* @__PURE__ */ (0, U.jsx)(Ds, {
+					/* @__PURE__ */ (0, U.jsx)(Os, {
 						tone: "cyan",
-						text: P ? "快把罐罐交出来喵！" : "Treats, please, meow!",
+						text: z ? "快把罐罐交出来喵！" : "Treats, please, meow!",
 						onClick: u
 					}),
-					/* @__PURE__ */ (0, U.jsx)(Ds, {
+					/* @__PURE__ */ (0, U.jsx)(Os, {
 						tone: "ice",
-						text: P ? "戳戳我有惊喜喵！！" : "Tap for a surprise, meow!!",
+						text: z ? "戳戳我有惊喜喵！！" : "Tap for a surprise, meow!!",
 						onClick: f
 					})
 				]
@@ -14349,71 +14297,70 @@ function Os({ panelOpen: e }) {
 			!e && /* @__PURE__ */ (0, U.jsx)("button", {
 				type: "button",
 				className: "pet-actor-caption",
-				onClick: z,
-				"aria-disabled": s,
-				tabIndex: b ? -1 : 0,
-				children: H
+				onClick: re,
+				tabIndex: -1,
+				children: se
 			}),
 			!e && /* @__PURE__ */ (0, U.jsxs)("button", {
 				type: "button",
 				className: "pet-hide-button",
-				onClick: ee,
-				children: [/* @__PURE__ */ (0, U.jsx)(Me, { size: 13 }), /* @__PURE__ */ (0, U.jsx)("span", { children: P ? "隐藏圆宝" : "Hide Yuanbao" })]
+				onClick: te,
+				children: [/* @__PURE__ */ (0, U.jsx)(Me, { size: 13 }), /* @__PURE__ */ (0, U.jsx)("span", { children: z ? "隐藏圆宝" : "Hide Yuanbao" })]
 			}),
 			/* @__PURE__ */ (0, U.jsx)("span", {
 				className: "pet-sr",
 				role: "status",
-				children: s ? H : a ? P ? "圆宝在睡觉" : "Yuanbao is sleeping" : P ? "圆宝准备好陪你玩了" : "Yuanbao is ready to play"
+				children: oe || S || E || s ? se : a ? z ? "圆宝在睡觉" : "Yuanbao is sleeping" : z ? "圆宝准备好陪你玩了" : "Yuanbao is ready to play"
 			}),
 			S && !e && /* @__PURE__ */ (0, U.jsx)("button", {
 				className: "pet-actor-recovery",
 				onClick: () => {
 					a && c(), f();
 				},
-				children: P ? "和圆宝聊聊" : "Chat with Yuanbao"
+				children: z ? "和圆宝聊聊" : "Chat with Yuanbao"
 			})
 		]
-	}), A && !h && !e && /* @__PURE__ */ (0, U.jsxs)("button", {
+	}), L && !h && !e && /* @__PURE__ */ (0, U.jsxs)("button", {
 		ref: y,
 		type: "button",
 		className: "pet-restore-button",
-		onClick: R,
-		"aria-label": P ? "显示圆宝" : "Show Yuanbao",
-		title: P ? "显示圆宝" : "Show Yuanbao",
-		children: [/* @__PURE__ */ (0, U.jsx)(Je, { size: 17 }), /* @__PURE__ */ (0, U.jsx)("span", { children: P ? "圆宝" : "Yuanbao" })]
+		onClick: ne,
+		"aria-label": z ? "显示圆宝" : "Show Yuanbao",
+		title: z ? "显示圆宝" : "Show Yuanbao",
+		children: [/* @__PURE__ */ (0, U.jsx)(Je, { size: 17 }), /* @__PURE__ */ (0, U.jsx)("span", { children: z ? "圆宝" : "Yuanbao" })]
 	})] });
 }
 //#endregion
 //#region src/new-site/PetButler.tsx
-function ks() {
-	let e = l(), { lang: t, active: r, visible: i, petResting: a } = n(), { open: o, turns: s, affection: c, busy: u, close: d, ask: p, introduce: m, pet: h, rest: g, wake: v, navigate: y, clear: b, recordActivity: x } = ge(), [S, C] = (0, j.useState)(""), w = (0, j.useRef)(null), E = (0, j.useRef)(null), D = (0, j.useRef)(null), O = (0, j.useRef)(!0);
+function As() {
+	let e = l(), { lang: t, active: r, visible: i, petResting: a } = n(), { open: o, turns: s, affection: c, close: u, ask: d, introduce: p, pet: m, rest: h, wake: g, navigate: v, clear: y, recordActivity: b } = ge(), [x, S] = (0, j.useState)(""), C = (0, j.useRef)(null), w = (0, j.useRef)(null), E = (0, j.useRef)(null), D = (0, j.useRef)(!0);
 	(0, j.useEffect)(() => {
 		if (!o) return;
-		w.current?.focus({ preventScroll: !0 });
+		C.current?.focus({ preventScroll: !0 });
 		let e = (e) => {
-			e.key === "Escape" && !document.querySelector("dialog[open]") && (e.preventDefault(), d());
+			e.key === "Escape" && !document.querySelector("dialog[open]") && (e.preventDefault(), u());
 		};
 		return document.addEventListener("keydown", e), () => document.removeEventListener("keydown", e);
 	}, [o]), (0, j.useEffect)(() => {
-		o && O.current && D.current && (D.current.scrollTop = D.current.scrollHeight);
+		o && D.current && E.current && (E.current.scrollTop = E.current.scrollHeight);
 	}, [
 		s,
 		o,
 		t,
 		a
 	]);
-	let k = (e) => {
-		e.preventDefault(), S.trim() && !a && (O.current = !0, p(S), C(""), E.current?.focus({ preventScroll: !0 }));
-	}, A = (e) => {
-		O.current = !0, e();
+	let O = (e) => {
+		e.preventDefault(), x.trim() && !a && (D.current = !0, d(x), S(""), w.current?.focus({ preventScroll: !0 }));
+	}, k = (e) => {
+		D.current = !0, e();
 	};
 	return /* @__PURE__ */ (0, U.jsxs)("div", {
 		className: "pet-butler",
 		"data-page": r,
 		"data-awake": !a,
 		"data-visible": i,
-		children: [/* @__PURE__ */ (0, U.jsx)(Os, { panelOpen: o }), o && /* @__PURE__ */ (0, U.jsxs)("section", {
-			ref: w,
+		children: [/* @__PURE__ */ (0, U.jsx)(ks, { panelOpen: o }), o && /* @__PURE__ */ (0, U.jsxs)("section", {
+			ref: C,
 			id: "pet-panel",
 			className: "pet-panel",
 			role: "dialog",
@@ -14421,11 +14368,11 @@ function ks() {
 			"aria-labelledby": "pet-title",
 			"aria-describedby": "pet-mode",
 			tabIndex: -1,
-			onPointerDownCapture: x,
-			onPointerMoveCapture: x,
-			onKeyDownCapture: x,
-			onFocusCapture: x,
-			onScrollCapture: x,
+			onPointerDownCapture: b,
+			onPointerMoveCapture: b,
+			onKeyDownCapture: b,
+			onFocusCapture: b,
+			onScrollCapture: b,
 			children: [
 				/* @__PURE__ */ (0, U.jsxs)("header", {
 					className: "pet-panel-header",
@@ -14447,7 +14394,7 @@ function ks() {
 						}), /* @__PURE__ */ (0, U.jsx)("p", { children: e(a ? "pet.text04" : "pet.text05") })] }),
 						/* @__PURE__ */ (0, U.jsx)("button", {
 							className: "pet-icon-button",
-							onClick: () => d(),
+							onClick: () => u(),
 							"aria-label": e("pet.text06"),
 							children: /* @__PURE__ */ (0, U.jsx)(_, { size: 19 })
 						})
@@ -14459,22 +14406,22 @@ function ks() {
 						/* @__PURE__ */ (0, U.jsx)("span", { children: e("pet.text07") }),
 						/* @__PURE__ */ (0, U.jsx)("strong", { children: re(r, t) }),
 						/* @__PURE__ */ (0, U.jsxs)("button", {
-							onClick: () => A(m),
+							onClick: () => k(p),
 							disabled: a,
 							children: [e("pet.text08"), /* @__PURE__ */ (0, U.jsx)(f, { size: 13 })]
 						})
 					]
 				}),
 				/* @__PURE__ */ (0, U.jsxs)("div", {
-					ref: D,
+					ref: E,
 					className: "pet-chat-log",
 					role: "log",
 					"aria-label": e("pet.text09"),
 					"aria-live": "polite",
 					"aria-relevant": "additions text",
 					onScroll: () => {
-						let e = D.current;
-						e && (O.current = e.scrollHeight - e.scrollTop - e.clientHeight < 60);
+						let e = E.current;
+						e && (D.current = e.scrollHeight - e.scrollTop - e.clientHeight < 60);
 					},
 					children: [
 						/* @__PURE__ */ (0, U.jsxs)("div", {
@@ -14502,7 +14449,7 @@ function ks() {
 										children: n.reply[t].actions.map((e, t) => /* @__PURE__ */ (0, U.jsxs)("a", {
 											href: `#${e.route}`,
 											onClick: (t) => {
-												t.preventDefault(), y(e.route);
+												t.preventDefault(), v(e.route);
 											},
 											children: [e.label, /* @__PURE__ */ (0, U.jsx)(f, { size: 14 })]
 										}, `${e.route}-${t}`))
@@ -14516,7 +14463,7 @@ function ks() {
 								/* @__PURE__ */ (0, U.jsx)(We, { size: 23 }),
 								/* @__PURE__ */ (0, U.jsxs)("p", { children: [e("pet.text14"), /* @__PURE__ */ (0, U.jsx)("span", { children: e("pet.text15") })] }),
 								/* @__PURE__ */ (0, U.jsxs)("button", {
-									onClick: () => A(v),
+									onClick: () => k(g),
 									children: [/* @__PURE__ */ (0, U.jsx)(Je, { size: 15 }), e("pet.text16")]
 								})
 							]
@@ -14528,17 +14475,16 @@ function ks() {
 					"aria-label": e("pet.text17"),
 					children: [
 						/* @__PURE__ */ (0, U.jsxs)("button", {
-							onClick: () => A(() => p(t === "zh" ? "带我逛逛" : "Show me around")),
+							onClick: () => k(() => d(t === "zh" ? "带我逛逛" : "Show me around")),
 							disabled: a,
 							children: [/* @__PURE__ */ (0, U.jsx)(Oe, { size: 15 }), e("pet.text19")]
 						}),
 						/* @__PURE__ */ (0, U.jsxs)("button", {
-							onClick: () => A(h),
-							disabled: u,
+							onClick: () => k(m),
 							children: [/* @__PURE__ */ (0, U.jsx)(Pe, { size: 15 }), e("pet.text20")]
 						}),
 						/* @__PURE__ */ (0, U.jsxs)("button", {
-							onClick: () => A(a ? v : g),
+							onClick: () => k(a ? g : h),
 							children: [
 								a ? /* @__PURE__ */ (0, U.jsx)(Je, { size: 15 }) : /* @__PURE__ */ (0, U.jsx)(We, { size: 15 }),
 								" ",
@@ -14547,7 +14493,7 @@ function ks() {
 						}),
 						s.length > 0 && /* @__PURE__ */ (0, U.jsx)("button", {
 							className: "pet-clear",
-							onClick: b,
+							onClick: y,
 							"aria-label": e("pet.text23"),
 							title: e("pet.text24"),
 							children: /* @__PURE__ */ (0, U.jsx)(T, { size: 14 })
@@ -14556,7 +14502,7 @@ function ks() {
 				}),
 				/* @__PURE__ */ (0, U.jsxs)("form", {
 					className: "pet-composer",
-					onSubmit: k,
+					onSubmit: O,
 					onKeyDown: (e) => {
 						e.key === "Enter" && e.nativeEvent.isComposing && e.preventDefault();
 					},
@@ -14567,11 +14513,11 @@ function ks() {
 							children: e("pet.text25")
 						}),
 						/* @__PURE__ */ (0, U.jsx)("input", {
-							ref: E,
+							ref: w,
 							id: "pet-question",
-							value: S,
+							value: x,
 							onChange: (e) => {
-								x(), C(e.target.value);
+								b(), S(e.target.value);
 							},
 							maxLength: 400,
 							disabled: a,
@@ -14580,7 +14526,7 @@ function ks() {
 						}),
 						/* @__PURE__ */ (0, U.jsx)("button", {
 							type: "submit",
-							disabled: !S.trim() || a,
+							disabled: !x.trim() || a,
 							"aria-label": e("pet.text28"),
 							children: /* @__PURE__ */ (0, U.jsx)(we, { size: 20 })
 						})
@@ -14597,8 +14543,8 @@ function ks() {
 }
 //#endregion
 //#region src/new-site/App.tsx
-var As = (0, j.lazy)(() => import("./LanyardProfile-DnBHkQQ8.js"));
-function js() {
+var js = (0, j.lazy)(() => import("./LanyardProfile-DnBHkQQ8.js"));
+function Ms() {
 	let e = l(), t = {
 		email: e("contact.email"),
 		phone: e("contact.phone"),
@@ -14708,7 +14654,7 @@ function js() {
 		]
 	}) });
 }
-function Ms() {
+function Ns() {
 	let e = l(), { motion: t, visible: i, active: o, setActive: s, profile: c, setProfile: u, go: d, travel: f } = n(), p = (0, j.useRef)(null), m = (0, j.useRef)(null), h = (0, j.useRef)(!1);
 	return (0, j.useEffect)(() => {
 		let e = 0, t = () => {
@@ -14771,10 +14717,10 @@ function Ms() {
 				/* @__PURE__ */ (0, U.jsx)(ls, {}),
 				/* @__PURE__ */ (0, U.jsx)(Go, {}),
 				/* @__PURE__ */ (0, U.jsx)(as, {}),
-				/* @__PURE__ */ (0, U.jsx)(js, {})
+				/* @__PURE__ */ (0, U.jsx)(Ms, {})
 			]
 		}),
-		/* @__PURE__ */ (0, U.jsx)(ks, {}),
+		/* @__PURE__ */ (0, U.jsx)(As, {}),
 		/* @__PURE__ */ (0, U.jsx)("dialog", {
 			ref: p,
 			className: "profile-dialog",
@@ -14800,14 +14746,14 @@ function Ms() {
 						/* @__PURE__ */ (0, U.jsx)("p", { children: e("contact.text13") })
 					]
 				}),
-				children: /* @__PURE__ */ (0, U.jsx)(As, { onClose: () => u(!1) })
+				children: /* @__PURE__ */ (0, U.jsx)(js, { onClose: () => u(!1) })
 			})
 		})
 	] });
 }
 //#endregion
 //#region src/new-site/main.tsx
-var Ns = class extends j.Component {
+var Ps = class extends j.Component {
 	state = { failed: !1 };
 	static getDerivedStateFromError() {
 		return { failed: !0 };
@@ -14836,12 +14782,12 @@ var Ns = class extends j.Component {
 			]
 		}) : this.props.children;
 	}
-}, Ps = document.getElementById("jasong-root");
-if (Ps) {
-	let e = (0, M.createRoot)(Ps);
-	h().then((t) => e.render(/* @__PURE__ */ (0, U.jsx)(Ns, { children: /* @__PURE__ */ (0, U.jsx)(v, {
+}, Fs = document.getElementById("jasong-root");
+if (Fs) {
+	let e = (0, M.createRoot)(Fs);
+	h().then((t) => e.render(/* @__PURE__ */ (0, U.jsx)(Ps, { children: /* @__PURE__ */ (0, U.jsx)(v, {
 		content: t,
-		children: /* @__PURE__ */ (0, U.jsx)(s, { children: /* @__PURE__ */ (0, U.jsx)(he, { children: /* @__PURE__ */ (0, U.jsx)(Ms, {}) }) })
+		children: /* @__PURE__ */ (0, U.jsx)(s, { children: /* @__PURE__ */ (0, U.jsx)(he, { children: /* @__PURE__ */ (0, U.jsx)(Ns, {}) }) })
 	}) }))).catch(() => e.render(/* @__PURE__ */ (0, U.jsxs)("main", {
 		className: "site-error",
 		children: [

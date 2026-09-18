@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-09-17T16:27:41.499956+00:00",
-  "buildId": "e88e7b0008e63746",
+  "createdAt": "2026-09-18T10:48:33.888023+00:00",
+  "buildId": "224ad6211324cbd8",
   "entrypoints": [
     "index.html",
     "studio-preview.html"
@@ -39,13 +39,13 @@
     },
     {
       "path": "assets/jasong-app/app.css",
-      "size": 342766,
-      "sha256": "dc9657eaa4899e299a0716a33382a5c17239bdf264f2fb34ea6e29f1a7ac01c7"
+      "size": 342804,
+      "sha256": "c2cd0964571e641acaf4a88c9768229cbce1c13e2d1a68e36be298c8ab62e7fd"
     },
     {
       "path": "assets/jasong-app/app.js",
-      "size": 544650,
-      "sha256": "6528f48d900c4c464820755769d5459ae70d83f28b44f05fe336411744269a9e"
+      "size": 545514,
+      "sha256": "8e9ac04b5bc6c2ab25ab2b6b948cf7ac79c41382d12b5d7b0c8f70d0792595e4"
     },
     {
       "path": "assets/jasong-app/lanyard-card-materials-DBqYkVb4.js",
@@ -540,12 +540,12 @@
     {
       "path": "index.html",
       "size": 1381,
-      "sha256": "c1a56cbd54898d99b6438cc9ada0dbf82913e1a133fc28abfc7ebc0d397eb9bb"
+      "sha256": "688f9aa35f7d1c737f1328c489dc2c25b5fa5ae6848a8887097caa0955602697"
     },
     {
       "path": "studio-preview.html",
       "size": 1381,
-      "sha256": "c1a56cbd54898d99b6438cc9ada0dbf82913e1a133fc28abfc7ebc0d397eb9bb"
+      "sha256": "688f9aa35f7d1c737f1328c489dc2c25b5fa5ae6848a8887097caa0955602697"
     }
   ]
 }
