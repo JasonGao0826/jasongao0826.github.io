@@ -1,5 +1,5 @@
 import { a as e, i as t, n, s as r, u as i } from "./SiteContext-CMMWA07R.js";
-import { _ as a, d as o, l as s, n as c, p as l, s as u, t as d, u as f } from "./IdentityBadge-BRPJVZFl.js";
+import { _ as a, d as o, l as s, n as c, p as l, s as u, t as d, u as f } from "./IdentityBadge-GlhcNadD.js";
 import { A as p, C as m, D as h, O as g, S as _, T as v, _ as y, a as b, d as x, f as S, g as C, h as w, i as T, j as E, k as D, l as O, m as k, n as A, o as j, p as M, r as N, t as P, u as F, v as I, w as L, x as R, y as z } from "./lanyard-card-materials-DBqYkVb4.js";
 //#region src/new-site/lanyard-profile.css
 var B = /* @__PURE__ */ i(r()), V = e();

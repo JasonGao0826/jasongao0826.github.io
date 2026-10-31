@@ -26,20 +26,20 @@ var a = /* @__PURE__ */ i(r()), o = e(), s = {
 		en: "No experience entries are currently published"
 	},
 	"experience.tool1": {
-		zh: "Shopify",
-		en: "Shopify"
+		zh: "生意参谋",
+		en: "Alibaba Business Advisor"
 	},
 	"experience.tool2": {
-		zh: "Facebook Ads",
-		en: "Facebook Ads"
+		zh: "数据银行",
+		en: "Alibaba Databank"
 	},
 	"experience.tool3": {
-		zh: "Excel",
-		en: "Excel"
+		zh: "Dify",
+		en: "Dify"
 	},
 	"experience.tool4": {
-		zh: "PowerPoint",
-		en: "PowerPoint"
+		zh: "DeepSeek API",
+		en: "DeepSeek API"
 	},
 	"projects.heading": {
 		zh: "项目经历",
@@ -553,6 +553,18 @@ var a = /* @__PURE__ */ i(r()), o = e(), s = {
 		zh: "+86 185 3010 6867",
 		en: "+86 185 3010 6867"
 	},
+	"contact.github": {
+		zh: "https://github.com/JasonGao0826",
+		en: "https://github.com/JasonGao0826"
+	},
+	"contact.githubDisplay": {
+		zh: "github.com/JasonGao0826",
+		en: "github.com/JasonGao0826"
+	},
+	"contact.copyGithub": {
+		zh: "复制 GitHub 地址",
+		en: "Copy GitHub link"
+	},
 	"contact.owner": {
 		zh: "高瑞徽 / JasonG",
 		en: "高瑞徽 / JasonG"
@@ -834,20 +846,20 @@ var a = /* @__PURE__ */ i(r()), o = e(), s = {
 		en: "No experience entries are currently published"
 	},
 	"experience.tool1": {
-		zh: "Shopify",
-		en: "Shopify"
+		zh: "生意参谋",
+		en: "Alibaba Business Advisor"
 	},
 	"experience.tool2": {
-		zh: "Facebook Ads",
-		en: "Facebook Ads"
+		zh: "数据银行",
+		en: "Alibaba Databank"
 	},
 	"experience.tool3": {
-		zh: "Excel",
-		en: "Excel"
+		zh: "Dify",
+		en: "Dify"
 	},
 	"experience.tool4": {
-		zh: "PowerPoint",
-		en: "PowerPoint"
+		zh: "DeepSeek API",
+		en: "DeepSeek API"
 	},
 	"projects.heading": {
 		zh: "项目经历",
@@ -884,6 +896,10 @@ var a = /* @__PURE__ */ i(r()), o = e(), s = {
 	"projects.openPdf": {
 		zh: "查看 PDF",
 		en: "Open PDF"
+	},
+	"projects.github": {
+		zh: "在 GitHub 查看我的代码",
+		en: "See my code on GitHub"
 	},
 	"projects.preview": {
 		zh: "成果预览",

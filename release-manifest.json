@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "createdAt": "2026-09-18T10:48:33.888023+00:00",
-  "buildId": "224ad6211324cbd8",
+  "createdAt": "2026-10-31T15:10:14.509781+00:00",
+  "buildId": "e6f1fc99fd1d397a",
   "entrypoints": [
     "index.html",
     "studio-preview.html"
@@ -23,14 +23,14 @@
       "sha256": "8dd95d5c27b96a6faa8cfe92c72264020dddee60579490ef2f82ad7a8c6b765f"
     },
     {
-      "path": "assets/jasong-app/IdentityBadge-BRPJVZFl.js",
-      "size": 45594,
-      "sha256": "87679ad4003021038f10c558d73de4c20680e6f05c690935b58e23487489dfc8"
+      "path": "assets/jasong-app/IdentityBadge-GlhcNadD.js",
+      "size": 46032,
+      "sha256": "e667135424aff623dc0cf9a2c36db77e419ce65b5a730ed51527b1df8897b51f"
     },
     {
-      "path": "assets/jasong-app/LanyardProfile-DnBHkQQ8.js",
+      "path": "assets/jasong-app/LanyardProfile-CNRE0Au_.js",
       "size": 17118,
-      "sha256": "01d844f0121c2f894816e277835b6fdf21fd6ca6420c676b5cc999a3c1c590d0"
+      "sha256": "480a7e5a6fa2f3cdc8ff9378445edb22fe4a648683b4f3b351f3ae064653f1cf"
     },
     {
       "path": "assets/jasong-app/SiteContext-CMMWA07R.js",
@@ -39,13 +39,13 @@
     },
     {
       "path": "assets/jasong-app/app.css",
-      "size": 342804,
-      "sha256": "c2cd0964571e641acaf4a88c9768229cbce1c13e2d1a68e36be298c8ab62e7fd"
+      "size": 345233,
+      "sha256": "1fcf1cb97cd19b280af9375f7a9357821e606c65465658ab941d7226d94434ff"
     },
     {
       "path": "assets/jasong-app/app.js",
-      "size": 545514,
-      "sha256": "8e9ac04b5bc6c2ab25ab2b6b948cf7ac79c41382d12b5d7b0c8f70d0792595e4"
+      "size": 548668,
+      "sha256": "a0cf5bea24dffc110bcea8c15e39b3d1ff87a439752e524abd498e98b76002cc"
     },
     {
       "path": "assets/jasong-app/lanyard-card-materials-DBqYkVb4.js",
@@ -433,6 +433,46 @@
       "sha256": "b0d72d7ac7bee0788ad9b0990945b6e591ec992ac74e4804621b71152e67ed32"
     },
     {
+      "path": "assets/projects-rental-agent/agent-demo.webp",
+      "size": 55874,
+      "sha256": "bda6911fa99f56ca215e46d5299a1d93deb296010b44526404eaee418590e241"
+    },
+    {
+      "path": "assets/projects-rental-agent/architecture.webp",
+      "size": 82130,
+      "sha256": "0c2176ee1d5869201d8a25da5de9fd0c18217271b9b491001b0080428df16bb7"
+    },
+    {
+      "path": "assets/projects-rental-agent/before-after.webp",
+      "size": 50848,
+      "sha256": "9d8e2cf0cc3d40722d8403cfb26de358ebc6bfc62c563a66f6d51c26f0a20565"
+    },
+    {
+      "path": "assets/projects-rental-agent/challenges.webp",
+      "size": 78216,
+      "sha256": "1c0e3ef1f8411ac78f25fd54693858fba74d17153148b9aabf2240e82e16f7ee"
+    },
+    {
+      "path": "assets/projects-rental-agent/cover.webp",
+      "size": 33916,
+      "sha256": "0b33dfb3025db29660b7a70b7e342ff3599b098ffd57a3f76f2cc2b9b5da78a8"
+    },
+    {
+      "path": "assets/projects-rental-agent/pain-points.webp",
+      "size": 50916,
+      "sha256": "cf8d0450618daa7b10a435b04e1026e9e3b819d3ebafcd574bd262b549810f8c"
+    },
+    {
+      "path": "assets/projects-rental-agent/solution.pdf",
+      "size": 630195,
+      "sha256": "d1e541095935efec1c319e59ffa911d5866c1323515f8206728cf076c35eb09f"
+    },
+    {
+      "path": "assets/projects-rental-agent/verification.webp",
+      "size": 91140,
+      "sha256": "2d172007d292f4bf638278c587a67b7e98bbcf7aa5a182e38fda4dffd6e78116"
+    },
+    {
       "path": "assets/projects-woolworths-v27/poster.pdf",
       "size": 5832963,
       "sha256": "994e7f8d68279e99a1ab22df77e575fdb1c30a601fe7b8f838917c5c479e4cae"
@@ -534,18 +574,18 @@
     },
     {
       "path": "assets/site-content/content.json",
-      "size": 48927,
-      "sha256": "a9be88b1c84786c432e2a5f9cfdf9ce2fbb9e9d4c7dca1ff7e1b6fae7c3f77f3"
+      "size": 65475,
+      "sha256": "0280f06c3397f3d899cf485cd11202cad8adef353533223ba391a545e0a5b442"
     },
     {
       "path": "index.html",
       "size": 1381,
-      "sha256": "688f9aa35f7d1c737f1328c489dc2c25b5fa5ae6848a8887097caa0955602697"
+      "sha256": "301eb2ef1d546a2286ef48b3f909182f4a6496fdd1665ee3444c52a4d811e3e3"
     },
     {
       "path": "studio-preview.html",
       "size": 1381,
-      "sha256": "688f9aa35f7d1c737f1328c489dc2c25b5fa5ae6848a8887097caa0955602697"
+      "sha256": "301eb2ef1d546a2286ef48b3f909182f4a6496fdd1665ee3444c52a4d811e3e3"
     }
   ]
 }

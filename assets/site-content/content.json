@@ -614,54 +614,37 @@
   ],
   "experiences": [
     {
-      "id": "gf",
-      "zh": {
-        "date": "2025.12 — 2026.02",
-        "place": "广州",
-        "company": "广发证券",
-        "role": "客户经理助理（营业部）",
-        "description": "参与客户接待与业务咨询，协助产品介绍；整理客户行为数据，并参与客户及银行等机构的拜访与合作拓展；理解不同客户的关注点，让沟通与服务更有针对性"
-      },
-      "en": {
-        "date": "2025.12 — 2026.02",
-        "place": "Guangzhou",
-        "company": "GF Securities",
-        "role": "Client Manager Assistant · Branch",
-        "description": "Supported client reception, product introductions and business enquiries; organised client behaviour data and joined visits to clients and banking partners"
-      }
-    },
-    {
-      "id": "honghe",
-      "zh": {
-        "date": "2024.11 — 2025.01",
-        "place": "郑州",
-        "company": "红禾网络科技",
-        "role": "独立站运营",
-        "description": "参与选品、Shopify 建站与详情页优化，开展广告测试与预算管理；结合流量、转化和成本评估运营表现；建立商家视角，关注整体收益，而非单一指标"
-      },
-      "en": {
-        "date": "2024.11 — 2025.01",
-        "place": "Zhengzhou",
-        "company": "Honghe Network Technology",
-        "role": "E-commerce Website Operations",
-        "description": "Worked on a Shopify store and page optimisation, ran audience and creative A/B tests, and managed Facebook advertising budgets and campaign pacing"
-      }
-    },
-    {
       "id": "illuminera",
       "zh": {
-        "date": "2023.05 — 2023.07",
+        "date": "2025.11 — 2026.03",
         "place": "上海",
-        "company": "意略明 Illuminera",
-        "role": "电商数据分析助理",
-        "description": "参与行业研究、竞品及电商数据分析，协助识别客户业务问题并提出营销建议；参加上海美博会介绍公司业务、寻找合作机会，并整理客户会议记录；从客户需求出发，用数据发现问题、支持策略"
+        "company": "意略明咨询 Illuminera",
+        "role": "行业咨询实习生",
+        "description": "目标客户调研：根据目标品牌（如蜂花、百威、澳芝曼等 5+ 品牌），使用生意参谋、数据银行等工具查询品牌及竞品市场数据，基于行业研究与竞品调研结果，输出品牌调研简报\n需求调研与 AI 提效：基于 Dify 本地部署品牌与竞品 RAG 知识库，研报、行研与会议纪要统一入库，采用混合检索与重排，结论可溯源至原文；通过 MCP 接入网页搜索补充公开信息，并调用 DeepSeek API 生成分析脚本自动计算核心指标，减少人工摘录与计算错误，单品牌 Desk Research 周期由约 7 天缩短至约 3 天\n展会支撑：参与美博会等行业展会，负责展前目标客户筛选，展中通过产品与解决方案讲解、现场需求初筛与关键人对接，识别潜在合作机会，展后完成线索整理与跟进建议输出，支撑公司渠道拓展"
       },
       "en": {
-        "date": "2023.05 — 2023.07",
+        "date": "2025.11 — 2026.03",
         "place": "Shanghai",
-        "company": "Illuminera",
-        "role": "E-commerce Data Analysis Assistant",
-        "description": "Cleaned and analysed platform data, developed customer profiles and competitor analysis, and supported brand and marketing work with Excel, presentations and desk research"
+        "company": "Illuminera Consulting",
+        "role": "Industry Consulting Intern",
+        "description": "Target client research: For 5+ target brands, including Bee&Flower and Budweiser, used tools such as Alibaba Business Advisor and Databank to pull brand and competitor market data, and turned industry and competitor research into brand research briefs\nNeeds research and AI efficiency: Built a locally deployed Dify RAG knowledge base of brands and competitors, bringing research reports, industry studies and meeting notes into one store with hybrid retrieval and reranking so every conclusion traces back to its source; connected web search through MCP for public information and used the DeepSeek API to generate analysis scripts that calculate core metrics, reducing manual extraction and calculation errors and cutting single-brand desk research from about 7 days to about 3\nTrade show support: Took part in industry shows such as beauty expos; screened target clients before the show, presented products and solutions, qualified needs and connected with key decision-makers on site to identify partnership opportunities, then organised leads and follow-up recommendations to support channel expansion"
+      }
+    },
+    {
+      "id": "gf",
+      "zh": {
+        "date": "2024.11 — 2025.03",
+        "place": "广州营业部",
+        "company": "广发证券",
+        "role": "客户经理实习生",
+        "description": "市场研究：跟踪证券市场热点板块与政策动态，梳理重点上市公司基本面，累计输出热点公司基本面研究报告 20+ 份，供团队一线客户经理展业沟通使用\n客户拓展：参与银行、企事业单位等外部合作渠道的对接与维护，协助客户经理拓客 100+\n解决方案支撑：学习并掌握公司各类金融产品知识，协助进行客户需求分析，配合完成产品推介与资产配置方案 50+ 份，其中 25 位客户购买 ETF 或开通融资融券等业务"
+      },
+      "en": {
+        "date": "2024.11 — 2025.03",
+        "place": "Guangzhou Branch",
+        "company": "GF Securities",
+        "role": "Client Manager Intern",
+        "description": "Market research: Tracked hot sectors and policy developments in the securities market and reviewed the fundamentals of key listed companies, producing 20+ research reports on trending companies for front-line client managers to use with clients\nClient development: Helped connect with and maintain partner channels such as banks, businesses and public institutions, supporting client managers in bringing in 100+ clients\nSolution support: Learned the firm's financial products, helped analyse client needs and prepared 50+ product recommendations and asset allocation plans; 25 of those clients bought ETFs or opened margin trading and other services"
       }
     }
   ],
@@ -1207,20 +1190,20 @@
       "en": "No experience entries are currently published"
     },
     "experience.tool1": {
-      "zh": "Shopify",
-      "en": "Shopify"
+      "zh": "生意参谋",
+      "en": "Alibaba Business Advisor"
     },
     "experience.tool2": {
-      "zh": "Facebook Ads",
-      "en": "Facebook Ads"
+      "zh": "数据银行",
+      "en": "Alibaba Databank"
     },
     "experience.tool3": {
-      "zh": "Excel",
-      "en": "Excel"
+      "zh": "Dify",
+      "en": "Dify"
     },
     "experience.tool4": {
-      "zh": "PowerPoint",
-      "en": "PowerPoint"
+      "zh": "DeepSeek API",
+      "en": "DeepSeek API"
     },
     "projects.heading": {
       "zh": "项目经历",
@@ -1453,10 +1436,298 @@
     "life.next": {
       "zh": "保持联系",
       "en": "Keep in touch"
+    },
+    "contact.github": {
+      "zh": "https://github.com/JasonGao0826",
+      "en": "https://github.com/JasonGao0826"
+    },
+    "contact.githubDisplay": {
+      "zh": "github.com/JasonGao0826",
+      "en": "github.com/JasonGao0826"
+    },
+    "contact.copyGithub": {
+      "zh": "复制 GitHub 地址",
+      "en": "Copy GitHub link"
+    },
+    "projects.github": {
+      "zh": "在 GitHub 查看我的代码",
+      "en": "See my code on GitHub"
     }
   },
   "textBlocks": [],
   "projects": [
+    {
+      "id": "project-rental-agent",
+      "kind": "project",
+      "title": {
+        "zh": "建材租赁业务智能化解决方案",
+        "en": "Building-Materials Rental: AI Operations Solution"
+      },
+      "subtitle": {
+        "zh": "独立项目｜项目负责人｜2026.07 至今",
+        "en": "Independent project | Project lead | Jul 2026 – present"
+      },
+      "summary": {
+        "zh": "针对建材租赁站“工人开票易出错、业务规则只能问老板”两大痛点，交付飞书多维表格收发料系统与业务问答 Agent",
+        "en": "For a building-materials rental yard where hand-written dispatch slips went wrong and every rule question went to the owner, I delivered a Feishu Bitable dispatch system and a business Q&A Agent"
+      },
+      "displayTitle": {
+        "zh": "建材租赁智能化",
+        "en": "Rental Yard AI"
+      },
+      "subject": {
+        "zh": "飞书多维表格 +\n业务问答 Agent",
+        "en": "Feishu Bitable +\nBusiness Q&A Agent"
+      },
+      "kindLabel": {
+        "zh": "独立项目 · 项目负责人",
+        "en": "Independent project · Project lead"
+      },
+      "participationLabel": {
+        "zh": "独立完成需求调研、方案设计到系统交付",
+        "en": "Led discovery, solution design and delivery end to end"
+      },
+      "sourceNote": {
+        "zh": "方案 PDF 由本人 PPT 导出；评测数字来自项目内测试，上线效果为本人记录",
+        "en": "The deck PDF is exported from my own presentation; evaluation figures come from in-project tests and live results from my own records"
+      },
+      "tags": [
+        {
+          "zh": "飞书多维表格",
+          "en": "Feishu Bitable"
+        },
+        {
+          "zh": "RAG 检索",
+          "en": "RAG retrieval"
+        },
+        {
+          "zh": "AI Agent",
+          "en": "AI Agent"
+        },
+        {
+          "zh": "本地模型",
+          "en": "Local LLM"
+        }
+      ],
+      "slides": [
+        {
+          "id": "cover",
+          "src": "assets/projects-rental-agent/cover.webp",
+          "label": {
+            "zh": "方案封面",
+            "en": "Deck cover"
+          },
+          "alt": {
+            "zh": "建材租赁业务智能化解决方案封面：收发料提效 × 业务问答 Agent × 本地模型",
+            "en": "Deck cover: building-materials rental AI solution — faster dispatch, a business Q&A Agent and local models"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 1
+        },
+        {
+          "id": "pain-points",
+          "src": "assets/projects-rental-agent/pain-points.webp",
+          "label": {
+            "zh": "现状与两大痛点",
+            "en": "Current state and pain points"
+          },
+          "alt": {
+            "zh": "现状流程与两大痛点：人工开票少打一个零导致 9,000 根收不回，业务规则都得问老板",
+            "en": "Current workflow and two pain points: a dropped zero on a slip loses 9,000 pipes, and every rule question goes to the owner"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 3
+        },
+        {
+          "id": "before-after",
+          "src": "assets/projects-rental-agent/before-after.webp",
+          "label": {
+            "zh": "改造前 vs 改造后",
+            "en": "Before and after"
+          },
+          "alt": {
+            "zh": "改造前后流程对比：飞书多维表格 + 手机录单，以及在飞书里直接提问的业务问答 Agent",
+            "en": "Workflow before and after: Feishu Bitable with mobile entry, plus a business Q&A Agent asked directly in Feishu"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 5
+        },
+        {
+          "id": "agent-demo",
+          "src": "assets/projects-rental-agent/agent-demo.webp",
+          "label": {
+            "zh": "业务问答 Agent 演示",
+            "en": "Business Q&A Agent demo"
+          },
+          "alt": {
+            "zh": "业务问答 Agent 演示表：规则带出处、查数追问、计租、跨合同对比与拒答",
+            "en": "Agent demo table: cited rules, follow-up data lookups, rent calculation, cross-contract comparison and refusals"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 7
+        },
+        {
+          "id": "architecture",
+          "src": "assets/projects-rental-agent/architecture.webp",
+          "label": {
+            "zh": "Agent 整体技术架构",
+            "en": "Agent architecture"
+          },
+          "alt": {
+            "zh": "Agent 整体技术架构：业务应用层、知识处理与 RAG 检索、Agent 编排、数据层与安全运维",
+            "en": "Agent architecture: application layer, knowledge processing and RAG retrieval, orchestration, data layer, security and operations"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 9
+        },
+        {
+          "id": "verification",
+          "src": "assets/projects-rental-agent/verification.webp",
+          "label": {
+            "zh": "回答前代码核对来源",
+            "en": "Source checks before answering"
+          },
+          "alt": {
+            "zh": "代码校验与评测结果：135/135 模拟题通过，应拒答 15/15，用错合同 0 次，选型对比豆包 lite 92 分",
+            "en": "Code verification and evaluation: 135/135 test answers, 15/15 refusals, zero wrong-contract answers, Doubao lite scored 92 in model selection"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 14
+        },
+        {
+          "id": "challenges",
+          "src": "assets/projects-rental-agent/challenges.webp",
+          "label": {
+            "zh": "项目难点与解决方案",
+            "en": "Challenges and solutions"
+          },
+          "alt": {
+            "zh": "项目难点与解决方案表：OCR 误判、相邻条款误命中、跨合同复合题、计算口径与业务口径冲突",
+            "en": "Challenges and solutions: confident OCR errors, neighbouring-clause hits, cross-contract questions, calculation rules and conflicting business rules"
+          },
+          "pdf": "assets/projects-rental-agent/solution.pdf",
+          "page": 15
+        }
+      ],
+      "details": [
+        {
+          "id": "overview",
+          "title": {
+            "zh": "项目简介",
+            "en": "Project overview"
+          },
+          "paragraphs": [
+            {
+              "zh": "建材租赁站把钢管、扣件、盘扣租给工地，高峰一天约 20 车，合同和单据都是扫描件；人工开票容易少打一个零，最低租期、丢失赔偿、怎么计费也都只能问老板。我从需求调研、方案设计到系统交付独立完成，用两个抓手解决：飞书多维表格 + 手机录单，以及在飞书里直接提问的业务问答 Agent",
+              "en": "The yard rents steel pipes, couplers and ring-lock scaffolding to construction sites — up to about 20 truckloads a day at peak — and all contracts and slips were scanned paper. A single dropped zero on a hand-written slip could lose thousands of pipes, and questions about minimum rental periods, loss compensation or billing all had to go to the owner. I handled discovery, solution design and delivery myself, with two levers: Feishu Bitable with mobile order entry, and a business Q&A Agent asked directly in Feishu"
+            }
+          ]
+        },
+        {
+          "id": "participation",
+          "title": {
+            "zh": "我的工作",
+            "en": "My work"
+          },
+          "paragraphs": [],
+          "points": [
+            {
+              "zh": "多维表格搭建：搭建 18 张业务表、5 层结构的收发料与结算系统，配置 12 条自动化工作流与 6 个计租公式字段；支持手机整单录入，实际与需求数量差超 100 根/个自动提醒",
+              "en": "Feishu Bitable: built a five-layer dispatch and settlement system of 18 tables with 12 automated workflows and 6 rent-calculation fields; supports full-order mobile entry and alerts when actual and requested quantities differ by more than 100 pieces"
+            },
+            {
+              "zh": "技术选型与 Agent 评测：结合业务场景，基于自建 470 题本地评测集，同口径对比豆包、DeepSeek 与本地 Ollama（Qwen3.5-4B）完成选型，记录单题 token、耗时、费用与正确率；通过未知问题、跨合同、不同计算口径等测试，拒答、跨合同等边界场景零失误",
+              "en": "Model selection and Agent evaluation: built a local 470-question evaluation set from real business scenarios and compared Doubao, DeepSeek and a local Ollama model (Qwen3.5-4B) on the same basis, tracking tokens, latency, cost and accuracy per question; tests with unknown questions, cross-contract queries and different calculation rules showed zero failures in edge cases such as refusals and cross-contract questions"
+            },
+            {
+              "zh": "Agent 开发：采用豆包 Seed-2.1-lite + 本地 RapidOCR 双路识别完成 570 页扫描件治理（14,130 处校对留痕）；构建 bge-m3 + ChromaDB 混合检索知识库，并经本地 bge-reranker 精排；设计六步工作流与有边界规划，通过飞书机器人提供问答",
+              "en": "Agent development: cleaned up 570 scanned pages with two-way recognition by Doubao Seed-2.1-lite and local RapidOCR, logging 14,130 proofreading corrections; built a bge-m3 + ChromaDB hybrid-retrieval knowledge base reranked locally by bge-reranker; designed a six-step workflow with bounded planning, served through a Feishu bot"
+            }
+          ]
+        },
+        {
+          "id": "solution",
+          "title": {
+            "zh": "解决方案",
+            "en": "Solution"
+          },
+          "paragraphs": [],
+          "points": [
+            {
+              "zh": "抓手一 · 飞书多维表格 + 手机录单：需求登记、派工、工人手机录实际数、确认前检查、更正留痕与余额汇总，会计次日核对；需求数和实际数分开记录，不自动改平",
+              "en": "Lever one · Feishu Bitable with mobile entry: request logging, dispatch, workers entering actual counts on their phones, pre-confirmation checks, traceable corrections and balance roll-ups for next-day accounting review; requested and actual quantities are kept separate"
+            },
+            {
+              "zh": "抓手二 · 业务问答 Agent：规则题附合同原文出处，查数支持追问，租金由计租函数计算，跨合同对比先写计划再查；合同没写的内容直接说明，不编数字",
+              "en": "Lever two · Business Q&A Agent: rule answers cite the contract text, data lookups support follow-up questions, rent comes from a calculation function and cross-contract questions are planned before querying; when a contract is silent the Agent says so rather than inventing numbers"
+            }
+          ]
+        },
+        {
+          "id": "technology",
+          "title": {
+            "zh": "技术方案",
+            "en": "Technical approach"
+          },
+          "paragraphs": [],
+          "points": [
+            {
+              "zh": "数据：视觉大模型 + 本地 OCR 双路比对，按“数量 × 天数 × 单价 = 金额”逐行核对；158 条真实明细与原件三个月总账一致",
+              "en": "Data: vision-model and local-OCR cross-checks plus line-by-line quantity × days × price = amount checks; 158 real line items reconcile with three months of original ledgers"
+            },
+            {
+              "zh": "检索：按合同条款切成 134 块，加 18 类条款类型标签与上下文前缀，关键词 + 语义双路检索后由本地 bge-reranker 重排，每块可引用到页码和条款",
+              "en": "Retrieval: contracts split into 134 clause-level chunks with 18 clause-type labels and context prefixes; keyword and semantic retrieval reranked locally by bge-reranker, each chunk citable to page and clause"
+            },
+            {
+              "zh": "Agent：定合同 → 理解问题 → 早拒答 → 取证据 → 组织回答 → 校验，14 个只读工具，复合题最多调用 8 次工具，每次调用记录轨迹",
+              "en": "Agent: pick contract → understand question → refuse early → gather evidence → compose answer → verify, with 14 read-only tools, at most 8 tool calls per compound question and a trace for every call"
+            },
+            {
+              "zh": "校验：引文须逐字出现在所引条款且属于当前合同，结论中的数字须来自条款、工具返回或用户原话；不通过先重写，仍不过降级为“需人工确认”",
+              "en": "Verification: quotes must appear verbatim in the cited clause of the current contract, and every number must come from a clause, a tool result or the user's own words; failures are rewritten once, then downgraded to “needs human review”"
+            },
+            {
+              "zh": "本地化：Ollama + Qwen3.5-4B（Q4 量化）可按环节替换云端模型，改配置不改代码，合同片段不出本机",
+              "en": "Local models: Ollama with Qwen3.5-4B (Q4) can replace the cloud model stage by stage through configuration, keeping contract text on the local machine"
+            }
+          ]
+        },
+        {
+          "id": "results",
+          "title": {
+            "zh": "项目成果",
+            "en": "Results"
+          },
+          "paragraphs": [],
+          "points": [
+            {
+              "zh": "系统上线使用 2 个月，开票错误由每月约 2 次降至 0 次；回答采纳率 90%，单个问题比人工节省约 10 分钟",
+              "en": "Two months in use: slip errors fell from about two a month to zero; 90% of answers were adopted, saving about 10 minutes per question compared with asking manually"
+            },
+            {
+              "zh": "评测：基于 470 题本地评测集，拒答、跨合同等边界场景零失误；应拒答 15/15，用错合同 0 次；规则题主依据进前 3 为 17/17",
+              "en": "Evaluation: zero failures in edge cases such as refusals and cross-contract questions on a 470-question local evaluation set; 15/15 correct refusals, zero wrong-contract answers, and the main source in the top three for 17/17 rule questions"
+            },
+            {
+              "zh": "计租函数回放 158 条真实结算单，157 条一致；跨合同复合题由 9/36 提升到 35/36",
+              "en": "Replaying 158 real settlement records through the rent function matched 157; cross-contract compound questions improved from 9/36 to 35/36"
+            }
+          ]
+        }
+      ],
+      "deliverables": [
+        {
+          "id": "deck",
+          "label": {
+            "zh": "查看方案 PDF",
+            "en": "Open solution deck PDF"
+          },
+          "src": "assets/projects-rental-agent/solution.pdf",
+          "pages": 15
+        }
+      ]
+    },
     {
       "id": "project-media-1",
       "kind": "case-study",
@@ -1645,46 +1916,6 @@
           "pages": 26
         }
       ]
-    },
-    {
-      "id": "project-5d85fe00-b9d9-4b0e-aa88-4ad3256d3e09",
-      "kind": "project",
-      "title": {
-        "zh": "求职申请Agent",
-        "en": ""
-      },
-      "subtitle": {
-        "zh": "",
-        "en": ""
-      },
-      "summary": {
-        "zh": "自动网上检索每日各个公司符合的岗位\n\n根据自身数据库和JD描述智能生成匹配简历\n\n自动填写简历内容",
-        "en": ""
-      },
-      "displayTitle": {
-        "zh": "",
-        "en": ""
-      },
-      "subject": {
-        "zh": "正在赶来的路上，敬请期待",
-        "en": ""
-      },
-      "kindLabel": {
-        "zh": "",
-        "en": ""
-      },
-      "participationLabel": {
-        "zh": "",
-        "en": ""
-      },
-      "sourceNote": {
-        "zh": "",
-        "en": ""
-      },
-      "tags": [],
-      "slides": [],
-      "details": [],
-      "deliverables": []
     }
   ]
 }
